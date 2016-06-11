@@ -3,7 +3,7 @@ namespace alphayax\mdGen\models;
 
 class Page {
 
-    /** @var ClassChapter[] */
+    /** @var Chapter[] */
     protected $chapters = [];
 
     /** @var Page[] */
@@ -20,8 +20,8 @@ class Page {
 
     /**
      * Page constructor
-     * @param string $pageNamespace
-     * @param ClassChapter[] $classes
+     * @param string    $pageNamespace
+     * @param Chapter[] $classes
      */
     public function __construct( $pageNamespace, array $classes) {
         $this->namespace = $pageNamespace;

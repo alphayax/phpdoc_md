@@ -7,7 +7,7 @@
 - [ContactUrl](#ContactUrl)
 
 
-<a name="ContactAddress"></a>"
+<a name="ContactAddress"></a>
 ## ContactAddress
 
 **Namespace**  : alphayax\freebox\api\v3\services\Call\Contact
@@ -16,13 +16,13 @@
 
 | Method | Description |
 |---|---|
-| `getFromId` | Get the address (with the given id) | 
-| `create` | Add an address | 
-| `delete` | Remove an address | 
-| `deleteFromId` | Remove an address (with the given id) | 
-| `update` | Update an address | 
+| `getFromId` |  | 
+| `create` |  | 
+| `delete` |  | 
+| `deleteFromId` |  | 
+| `update` |  | 
 
-<a name="ContactEmail"></a>"
+<a name="ContactEmail"></a>
 ## ContactEmail
 
 **Namespace**  : alphayax\freebox\api\v3\services\Call\Contact
@@ -31,13 +31,13 @@
 
 | Method | Description |
 |---|---|
-| `getFromId` | Get the email contact (with the given id) | 
-| `create` | Create a new email contact | 
-| `delete` | Remove an email contact | 
-| `deleteFromId` | Remove an email contact (with the given id) | 
-| `update` | Update an email contact | 
+| `getFromId` |  | 
+| `create` |  | 
+| `delete` |  | 
+| `deleteFromId` |  | 
+| `update` |  | 
 
-<a name="ContactEntry"></a>"
+<a name="ContactEntry"></a>
 ## ContactEntry
 
 **Namespace**  : alphayax\freebox\api\v3\services\Call\Contact
@@ -46,18 +46,18 @@
 
 | Method | Description |
 |---|---|
-| `getAll` | List all contacts | 
-| `getFromId` | Get a specific contact entry | 
-| `create` | Add a contact entry | 
-| `update` | Update a contact entry | 
-| `delete` | Remove a contact entry | 
-| `deleteFromId` | remove a contact entry (with the specified id) | 
-| `getContactNumbersFromContactId` | Get all numbers associated to a given contact id | 
-| `getContactAddressesFromContactId` | Get all addresses associated to a given contact id | 
-| `getContactEmailsFromContactId` | Get all email addresses associated to a given contact id | 
-| `getContactUrlsFromContactId` | Get all URLs associated to a given contact id | 
+| `getAll` |  | 
+| `getFromId` |  | 
+| `create` |  | 
+| `update` |  | 
+| `delete` |  | 
+| `deleteFromId` |  | 
+| `getContactNumbersFromContactId` |  | 
+| `getContactAddressesFromContactId` |  | 
+| `getContactEmailsFromContactId` |  | 
+| `getContactUrlsFromContactId` |  | 
 
-<a name="ContactNumber"></a>"
+<a name="ContactNumber"></a>
 ## ContactNumber
 
 **Namespace**  : alphayax\freebox\api\v3\services\Call\Contact
@@ -66,13 +66,13 @@
 
 | Method | Description |
 |---|---|
-| `getFromId` | Get the contact number (with the given id) | 
-| `create` | Add a new contact number | 
-| `delete` | Remove a contact number | 
-| `deleteFromId` | Remove a contact number (with the specified id) | 
-| `update` | Update a contact number | 
+| `getFromId` |  | 
+| `create` |  | 
+| `delete` |  | 
+| `deleteFromId` |  | 
+| `update` |  | 
 
-<a name="ContactUrl"></a>"
+<a name="ContactUrl"></a>
 ## ContactUrl
 
 **Namespace**  : alphayax\freebox\api\v3\services\Call\Contact
@@ -81,8 +81,8 @@
 
 | Method | Description |
 |---|---|
-| `getFromId` | Get the contact url (with the given id) | 
-| `create` | Add a new contact url | 
-| `delete` | Remove a contact url | 
-| `deleteFromId` | Remove a contact url (with the given id) | 
-| `update` | Update a contact url | 
+| `getFromId` |  | 
+| `create` |  | 
+| `delete` |  | 
+| `deleteFromId` |  | 
+| `update` |  | 

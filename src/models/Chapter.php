@@ -1,7 +1,7 @@
 <?php
 namespace alphayax\mdGen\models;
 
-class ClassChapter {
+class Chapter {
 
     /** @var string */
     protected $class;
@@ -72,14 +72,13 @@ class ClassChapter {
                 $method2 = new \Zend_Reflection_Method( $rflxClass->getName(), $method->getName());
                 $docBlock = $method2->getDocblock();
 
-                // TODO : Truncker au premier retour a la ligne plutot que de remplacer par un espace
-                $desc = str_replace( PHP_EOL, ' ', $docBlock->getShortDescription());
+                $shortDesc = substr( $docBlock->getShortDescription(), 0, strpos( $docBlock->getShortDescription(), PHP_EOL));
+                $desc = str_replace( PHP_EOL, ' ', $shortDesc);
                 $generatedMd .= '| `'. $method2->getName() .'` | '. $desc . ' | ' . PHP_EOL;
                 //    print_r( $docBlock);
             }
             catch( \Exception $e){
-                /// TODO : Mieux gerer ca
-                echo "CACA !! La methode " . $method->getName() . " existe pas dans la classe ". $rflxClass->getName();
+                // Unable to parse PHPDoc Block... Skip it :(
             }
 
         }

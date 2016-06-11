@@ -10,7 +10,7 @@
 - [Xdsl](#Xdsl)
 
 
-<a name="Connection"></a>"
+<a name="Connection"></a>
 ## Connection
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\Connection
@@ -19,13 +19,13 @@
 
 | Method | Description |
 |---|---|
-| `getStatus` | Get the current Connection status | 
-| `getConfiguration` | Get the current Connection configuration | 
-| `setConfiguration` | Get the current Connection configuration | 
-| `getIPv6Configuration` | Get the current IPv6 Connection configuration | 
-| `setIPv6Configuration` | Update the IPv6 Connection configuration | 
+| `getStatus` |  | 
+| `getConfiguration` |  | 
+| `setConfiguration` |  | 
+| `getIPv6Configuration` |  | 
+| `setIPv6Configuration` |  | 
 
-<a name="DynDns"></a>"
+<a name="DynDns"></a>
 ## DynDns
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\Connection
@@ -34,11 +34,11 @@
 
 | Method | Description |
 |---|---|
-| `getStatus` | Get the current DDns status | 
-| `getConfig` | Get the current DDns Configuration | 
-| `setConfig` | Set the DDns Configuration | 
+| `getStatus` |  | 
+| `getConfig` |  | 
+| `setConfig` |  | 
 
-<a name="Ftth"></a>"
+<a name="Ftth"></a>
 ## Ftth
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\Connection
@@ -47,9 +47,9 @@
 
 | Method | Description |
 |---|---|
-| `getStatus` | Get the current Connection status | 
+| `getStatus` |  | 
 
-<a name="Xdsl"></a>"
+<a name="Xdsl"></a>
 ## Xdsl
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\Connection
@@ -58,4 +58,4 @@
 
 | Method | Description |
 |---|---|
-| `getStatus` | Get the current Connection status | 
+| `getStatus` |  | 

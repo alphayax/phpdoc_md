@@ -4,7 +4,7 @@
 - [IGD](#IGD)
 
 
-<a name="AV"></a>"
+<a name="AV"></a>
 ## AV
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\UPnP
@@ -13,10 +13,10 @@
 
 | Method | Description |
 |---|---|
-| `getConfiguration` | Get the current UPnP AV configuration | 
-| `setConfiguration` | Update the UPnP AV configuration | 
+| `getConfiguration` |  | 
+| `setConfiguration` |  | 
 
-<a name="IGD"></a>"
+<a name="IGD"></a>
 ## IGD
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\UPnP
@@ -25,7 +25,7 @@
 
 | Method | Description |
 |---|---|
-| `getConfiguration` | Get the current UPnP AV configuration | 
-| `setConfiguration` | Update the UPnP AV configuration | 
-| `getRedirections` | Get the list of current redirection | 
-| `deleteRedirectionFromId` | Delete a redirection | 
+| `getConfiguration` |  | 
+| `setConfiguration` |  | 
+| `getRedirections` |  | 
+| `deleteRedirectionFromId` |  | 

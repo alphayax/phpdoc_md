@@ -6,7 +6,7 @@
 - [User](#User)
 
 
-<a name="Config"></a>"
+<a name="Config"></a>
 ## Config
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\VPN\Server
@@ -15,10 +15,10 @@
 
 | Method | Description |
 |---|---|
-| `getConfigurationFromId` | Get a VPN config | 
-| `setConfiguration` | Update the VPN configuration | 
+| `getConfigurationFromId` |  | 
+| `setConfiguration` |  | 
 
-<a name="Connection"></a>"
+<a name="Connection"></a>
 ## Connection
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\VPN\Server
@@ -27,10 +27,10 @@
 
 | Method | Description |
 |---|---|
-| `getAll` | Get the list of connections | 
-| `closeFromId` | Close a given connection | 
+| `getAll` |  | 
+| `closeFromId` |  | 
 
-<a name="IpPool"></a>"
+<a name="IpPool"></a>
 ## IpPool
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\VPN\Server
@@ -39,9 +39,9 @@
 
 | Method | Description |
 |---|---|
-| `getReservations` | Get the VPN server IP pool reservations | 
+| `getReservations` |  | 
 
-<a name="User"></a>"
+<a name="User"></a>
 ## User
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\VPN\Server
@@ -50,10 +50,10 @@
 
 | Method | Description |
 |---|---|
-| `getAll` | Get the list of VPNUser | 
-| `getFromLogin` | Gets the VPNUser with the given login | 
-| `add` | Creates a new VPNUser | 
-| `delete` | Deletes the VPNUser | 
-| `deleteFromLogin` | Deletes the VPNUser | 
-| `update` | Update a VPN Use | 
+| `getAll` |  | 
+| `getFromLogin` |  | 
+| `add` |  | 
+| `delete` |  | 
+| `deleteFromLogin` |  | 
+| `update` |  | 
 | `getConfigurationFile` |  | 

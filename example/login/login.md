@@ -4,7 +4,7 @@
 - [Session](#Session)
 
 
-<a name="Authorize"></a>"
+<a name="Authorize"></a>
 ## Authorize
 
 **Namespace**  : alphayax\freebox\api\v3\services\login
@@ -13,13 +13,13 @@
 
 | Method | Description |
 |---|---|
-| `__construct` | Authorize constructor. | 
-| `ask_authorization` | Contact the freebox and ask for App auth | 
+| `__construct` |  | 
+| `ask_authorization` |  | 
 | `get_authorization_status` |  | 
 | `getStatus` |  | 
 | `getAppToken` |  | 
 
-<a name="Session"></a>"
+<a name="Session"></a>
 ## Session
 
 **Namespace**  : alphayax\freebox\api\v3\services\login

@@ -5,7 +5,7 @@
 - [Status](#Status)
 
 
-<a name="Config"></a>"
+<a name="Config"></a>
 ## Config
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\SwitchPort
@@ -14,10 +14,10 @@
 
 | Method | Description |
 |---|---|
-| `getFromPortId` | Get a port configuration | 
-| `update` | Update a port configuration | 
+| `getFromPortId` |  | 
+| `update` |  | 
 
-<a name="Stats"></a>"
+<a name="Stats"></a>
 ## Stats
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\SwitchPort
@@ -26,9 +26,9 @@
 
 | Method | Description |
 |---|---|
-| `getFromPortId` | Get a port configuration | 
+| `getFromPortId` |  | 
 
-<a name="Status"></a>"
+<a name="Status"></a>
 ## Status
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\SwitchPort
@@ -37,4 +37,4 @@
 
 | Method | Description |
 |---|---|
-| `getStatus` | Get the current switch status | 
+| `getStatus` |  | 

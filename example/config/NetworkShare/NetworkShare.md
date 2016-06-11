@@ -4,7 +4,7 @@
 - [Samba](#Samba)
 
 
-<a name="Afp"></a>"
+<a name="Afp"></a>
 ## Afp
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\NetworkShare
@@ -13,10 +13,10 @@
 
 | Method | Description |
 |---|---|
-| `getConfiguration` | Get the current Afp configuration | 
-| `setConfiguration` | Update the Afp configuration | 
+| `getConfiguration` |  | 
+| `setConfiguration` |  | 
 
-<a name="Samba"></a>"
+<a name="Samba"></a>
 ## Samba
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\NetworkShare
@@ -25,5 +25,5 @@
 
 | Method | Description |
 |---|---|
-| `getConfiguration` | Get the current Samba configuration | 
-| `setConfiguration` | Update the Samba configuration | 
+| `getConfiguration` |  | 
+| `setConfiguration` |  | 

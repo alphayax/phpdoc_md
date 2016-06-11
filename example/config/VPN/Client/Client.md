@@ -4,7 +4,7 @@
 - [Status](#Status)
 
 
-<a name="Config"></a>"
+<a name="Config"></a>
 ## Config
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\VPN\Client
@@ -13,14 +13,14 @@
 
 | Method | Description |
 |---|---|
-| `getAll` | Get VPN Client configuration list | 
+| `getAll` |  | 
 | `getFromId` |  | 
 | `add` |  | 
 | `delete` |  | 
 | `deleteFromId` |  | 
 | `update` |  | 
 
-<a name="Status"></a>"
+<a name="Status"></a>
 ## Status
 
 **Namespace**  : alphayax\freebox\api\v3\services\config\VPN\Client
@@ -29,5 +29,5 @@
 
 | Method | Description |
 |---|---|
-| `getStatus` | Get the VPN client status | 
-| `getLogs` | Get the VPN client Logs | 
+| `getStatus` |  | 
+| `getLogs` |  | 

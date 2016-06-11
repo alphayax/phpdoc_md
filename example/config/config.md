@@ -48,7 +48,7 @@
 - [System](#System)
 
 
-<a name="DHCP"></a>"
+<a name="DHCP"></a>
 ## DHCP
 
 **Namespace**  : alphayax\freebox\api\v3\services\config
@@ -60,7 +60,7 @@
 | `getConfiguration` |  | 
 | `setConfiguration` |  | 
 
-<a name="FTP"></a>"
+<a name="FTP"></a>
 ## FTP
 
 **Namespace**  : alphayax\freebox\api\v3\services\config
@@ -72,7 +72,7 @@
 | `getConfiguration` |  | 
 | `setConfiguration` |  | 
 
-<a name="Freeplug"></a>"
+<a name="Freeplug"></a>
 ## Freeplug
 
 **Namespace**  : alphayax\freebox\api\v3\services\config
@@ -81,11 +81,11 @@
 
 | Method | Description |
 |---|---|
-| `getNetworks` | Get the current system info | 
-| `getFromId` | Get a particular Freeplug information | 
-| `resetFromId` | Reset a Freeplug | 
+| `getNetworks` |  | 
+| `getFromId` |  | 
+| `resetFromId` |  | 
 
-<a name="LCD"></a>"
+<a name="LCD"></a>
 ## LCD
 
 **Namespace**  : alphayax\freebox\api\v3\services\config
@@ -97,7 +97,7 @@
 | `getConfiguration` |  | 
 | `setConfiguration` |  | 
 
-<a name="System"></a>"
+<a name="System"></a>
 ## System
 
 **Namespace**  : alphayax\freebox\api\v3\services\config
@@ -106,5 +106,5 @@
 
 | Method | Description |
 |---|---|
-| `getConfiguration` | Get the current system info | 
-| `reboot` | Reboot the Freebox | 
+| `getConfiguration` |  | 
+| `reboot` |  | 

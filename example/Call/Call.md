@@ -9,7 +9,7 @@
 - [CallEntry](#CallEntry)
 
 
-<a name="CallEntry"></a>"
+<a name="CallEntry"></a>
 ## CallEntry
 
 **Namespace**  : alphayax\freebox\api\v3\services\Call
@@ -18,8 +18,8 @@
 
 | Method | Description |
 |---|---|
-| `getAll` | List every calls | 
-| `getFromId` | Access a given call entry | 
-| `delete` | Delete a call entry | 
-| `deleteFromId` | Delete a call entry | 
-| `update` | Update a given call entry | 
+| `getAll` |  | 
+| `getFromId` |  | 
+| `delete` |  | 
+| `deleteFromId` |  | 
+| `update` |  | 
