@@ -1,10 +1,10 @@
 # WiFi
 
-- [AccessPoint](#AccessPoint)
-- [Bss](#Bss)
-- [Config](#Config)
-- [MacFilter](#MacFilter)
-- [Planning](#Planning)
+- [AccessPoint](WiFi.md#AccessPoint)
+- [Bss](WiFi.md#Bss)
+- [Config](WiFi.md#Config)
+- [MacFilter](WiFi.md#MacFilter)
+- [Planning](WiFi.md#Planning)
 
 
 <a name="AccessPoint"></a>

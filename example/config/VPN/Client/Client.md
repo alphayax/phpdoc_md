@@ -1,7 +1,7 @@
 # Client
 
-- [Config](#Config)
-- [Status](#Status)
+- [Config](Client.md#Config)
+- [Status](Client.md#Status)
 
 
 <a name="Config"></a>

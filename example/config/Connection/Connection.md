@@ -1,13 +1,13 @@
 # Connection
 
 - [DynDns](./DynDns/DynDns.md)
-  - [DynDns](#DynDns)
-  - [NoIP](#NoIP)
-  - [Ovh](#Ovh)
-- [Connection](#Connection)
-- [DynDns](#DynDns)
-- [Ftth](#Ftth)
-- [Xdsl](#Xdsl)
+  - [DynDns](DynDns/DynDns.md#DynDns)
+  - [NoIP](DynDns/DynDns.md#NoIP)
+  - [Ovh](DynDns/DynDns.md#Ovh)
+- [Connection](Connection.md#Connection)
+- [DynDns](Connection.md#DynDns)
+- [Ftth](Connection.md#Ftth)
+- [Xdsl](Connection.md#Xdsl)
 
 
 <a name="Connection"></a>

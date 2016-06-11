@@ -1,10 +1,10 @@
 # Contact
 
-- [ContactAddress](#ContactAddress)
-- [ContactEmail](#ContactEmail)
-- [ContactEntry](#ContactEntry)
-- [ContactNumber](#ContactNumber)
-- [ContactUrl](#ContactUrl)
+- [ContactAddress](Contact.md#ContactAddress)
+- [ContactEmail](Contact.md#ContactEmail)
+- [ContactEntry](Contact.md#ContactEntry)
+- [ContactNumber](Contact.md#ContactNumber)
+- [ContactUrl](Contact.md#ContactUrl)
 
 
 <a name="ContactAddress"></a>

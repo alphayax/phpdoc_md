@@ -1,7 +1,7 @@
 # Storage
 
-- [Disk](#Disk)
-- [Partition](#Partition)
+- [Disk](Storage.md#Disk)
+- [Partition](Storage.md#Partition)
 
 
 <a name="Disk"></a>

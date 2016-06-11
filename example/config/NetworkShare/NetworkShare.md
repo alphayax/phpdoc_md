@@ -1,7 +1,7 @@
 # NetworkShare
 
-- [Afp](#Afp)
-- [Samba](#Samba)
+- [Afp](NetworkShare.md#Afp)
+- [Samba](NetworkShare.md#Samba)
 
 
 <a name="Afp"></a>

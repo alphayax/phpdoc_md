@@ -1,7 +1,7 @@
 # ParentalControl
 
-- [Filter](#Filter)
-- [FilterPlanning](#FilterPlanning)
+- [Filter](ParentalControl.md#Filter)
+- [FilterPlanning](ParentalControl.md#FilterPlanning)
 
 
 <a name="Filter"></a>

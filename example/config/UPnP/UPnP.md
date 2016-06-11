@@ -1,7 +1,7 @@
 # UPnP
 
-- [AV](#AV)
-- [IGD](#IGD)
+- [AV](UPnP.md#AV)
+- [IGD](UPnP.md#IGD)
 
 
 <a name="AV"></a>

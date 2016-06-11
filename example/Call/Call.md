@@ -1,12 +1,12 @@
 # Call
 
 - [Contact](./Contact/Contact.md)
-  - [ContactAddress](#ContactAddress)
-  - [ContactEmail](#ContactEmail)
-  - [ContactEntry](#ContactEntry)
-  - [ContactNumber](#ContactNumber)
-  - [ContactUrl](#ContactUrl)
-- [CallEntry](#CallEntry)
+  - [ContactAddress](Contact/Contact.md#ContactAddress)
+  - [ContactEmail](Contact/Contact.md#ContactEmail)
+  - [ContactEntry](Contact/Contact.md#ContactEntry)
+  - [ContactNumber](Contact/Contact.md#ContactNumber)
+  - [ContactUrl](Contact/Contact.md#ContactUrl)
+- [CallEntry](Call.md#CallEntry)
 
 
 <a name="CallEntry"></a>

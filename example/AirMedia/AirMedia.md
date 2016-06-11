@@ -1,7 +1,7 @@
 # AirMedia
 
-- [AirMediaReceiver](#AirMediaReceiver)
-- [Config](#Config)
+- [AirMediaReceiver](AirMedia.md#AirMediaReceiver)
+- [Config](AirMedia.md#Config)
 
 
 <a name="AirMediaReceiver"></a>

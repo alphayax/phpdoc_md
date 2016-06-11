@@ -1,7 +1,7 @@
 # login
 
-- [Authorize](#Authorize)
-- [Session](#Session)
+- [Authorize](login.md#Authorize)
+- [Session](login.md#Session)
 
 
 <a name="Authorize"></a>

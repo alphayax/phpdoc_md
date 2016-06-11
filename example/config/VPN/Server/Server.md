@@ -1,9 +1,9 @@
 # Server
 
-- [Config](#Config)
-- [Connection](#Connection)
-- [IpPool](#IpPool)
-- [User](#User)
+- [Config](Server.md#Config)
+- [Connection](Server.md#Connection)
+- [IpPool](Server.md#IpPool)
+- [User](Server.md#User)
 
 
 <a name="Config"></a>

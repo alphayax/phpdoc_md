@@ -63,7 +63,7 @@ class Page {
             foreach( $this->subPages as $subPageName => $subPage){
                 $subPageFile  = './' . $relativePath . $subPageName . DIRECTORY_SEPARATOR . $subPage->getPageBfe();
                 $generatedMd .=  "$pad- [$subPageName]($subPageFile)". PHP_EOL;
-                $generatedMd .= $subPage->generateTree( $pad . '  ', $subPageName . DIRECTORY_SEPARATOR);
+                $generatedMd .= $subPage->generateTree( $pad . '  ', $relativePath . $subPageName . DIRECTORY_SEPARATOR);
             }
         }
 
@@ -71,7 +71,8 @@ class Page {
         if( ! empty( $this->chapters)){
             foreach( $this->chapters as $chapter){
                 $chapterName   = $chapter->getReflexion()->getShortName();
-                $chapterAnchor = '#'.$chapter->getReflexion()->getShortName();
+                $chapterFile   = $relativePath . $this->getPageBfe();
+                $chapterAnchor = $chapterFile .'#'. $chapter->getReflexion()->getShortName();
                 $generatedMd  .= "$pad- [$chapterName]($chapterAnchor)" . PHP_EOL;
             }
         }

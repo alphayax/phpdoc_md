@@ -1,7 +1,7 @@
 # LAN
 
-- [Browser](#Browser)
-- [LAN](#LAN)
+- [Browser](LAN.md#Browser)
+- [LAN](LAN.md#LAN)
 
 
 <a name="Browser"></a>

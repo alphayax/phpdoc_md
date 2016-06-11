@@ -1,8 +1,8 @@
 # NAT
 
-- [DMZ](#DMZ)
-- [IncomingPort](#IncomingPort)
-- [PortForwarding](#PortForwarding)
+- [DMZ](NAT.md#DMZ)
+- [IncomingPort](NAT.md#IncomingPort)
+- [PortForwarding](NAT.md#PortForwarding)
 
 
 <a name="DMZ"></a>

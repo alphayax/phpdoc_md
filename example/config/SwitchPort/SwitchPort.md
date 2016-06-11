@@ -1,8 +1,8 @@
 # SwitchPort
 
-- [Config](#Config)
-- [Stats](#Stats)
-- [Status](#Status)
+- [Config](SwitchPort.md#Config)
+- [Stats](SwitchPort.md#Stats)
+- [Status](SwitchPort.md#Status)
 
 
 <a name="Config"></a>

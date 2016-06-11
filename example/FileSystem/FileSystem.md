@@ -1,10 +1,10 @@
 # FileSystem
 
-- [FileSharingLink](#FileSharingLink)
-- [FileSystemListing](#FileSystemListing)
-- [FileSystemOperation](#FileSystemOperation)
-- [FileSystemTask](#FileSystemTask)
-- [FileUpload](#FileUpload)
+- [FileSharingLink](FileSystem.md#FileSharingLink)
+- [FileSystemListing](FileSystem.md#FileSystemListing)
+- [FileSystemOperation](FileSystem.md#FileSystemOperation)
+- [FileSystemTask](FileSystem.md#FileSystemTask)
+- [FileUpload](FileSystem.md#FileUpload)
 
 
 <a name="FileSharingLink"></a>

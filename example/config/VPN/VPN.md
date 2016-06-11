@@ -1,11 +1,11 @@
 # VPN
 
 - [Client](./Client/Client.md)
-  - [Config](#Config)
-  - [Status](#Status)
+  - [Config](Client/Client.md#Config)
+  - [Status](Client/Client.md#Status)
 - [Server](./Server/Server.md)
-  - [Config](#Config)
-  - [Connection](#Connection)
-  - [IpPool](#IpPool)
-  - [User](#User)
+  - [Config](Server/Server.md#Config)
+  - [Connection](Server/Server.md#Connection)
+  - [IpPool](Server/Server.md#IpPool)
+  - [User](Server/Server.md#User)
 

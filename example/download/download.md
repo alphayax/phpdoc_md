@@ -1,11 +1,11 @@
 # download
 
-- [BlackList](#BlackList)
-- [Configuration](#Configuration)
-- [Download](#Download)
-- [Feed](#Feed)
-- [Peer](#Peer)
-- [Tracker](#Tracker)
+- [BlackList](download.md#BlackList)
+- [Configuration](download.md#Configuration)
+- [Download](download.md#Download)
+- [Feed](download.md#Feed)
+- [Peer](download.md#Peer)
+- [Tracker](download.md#Tracker)
 
 
 <a name="BlackList"></a>

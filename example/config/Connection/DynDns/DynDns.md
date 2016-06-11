@@ -1,8 +1,8 @@
 # DynDns
 
-- [DynDns](#DynDns)
-- [NoIP](#NoIP)
-- [Ovh](#Ovh)
+- [DynDns](DynDns.md#DynDns)
+- [NoIP](DynDns.md#NoIP)
+- [Ovh](DynDns.md#Ovh)
 
 
 <a name="DynDns"></a>
