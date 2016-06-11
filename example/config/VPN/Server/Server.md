@@ -1,5 +1,9 @@
 # Server
 
+**Namespace**  : alphayax\freebox\api\v3\services\config\VPN\Server
+
+# Overview
+
 - [Config](Server.md#Config)
 - [Connection](Server.md#Connection)
 - [IpPool](Server.md#IpPool)
@@ -9,7 +13,7 @@
 <a name="Config"></a>
 ## Config
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\VPN\Server
+**Class**  : alphayax\freebox\api\v3\services\config\VPN\Server\Config
 
 ### Public methods
 
@@ -21,7 +25,7 @@
 <a name="Connection"></a>
 ## Connection
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\VPN\Server
+**Class**  : alphayax\freebox\api\v3\services\config\VPN\Server\Connection
 
 ### Public methods
 
@@ -33,7 +37,7 @@
 <a name="IpPool"></a>
 ## IpPool
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\VPN\Server
+**Class**  : alphayax\freebox\api\v3\services\config\VPN\Server\IpPool
 
 ### Public methods
 
@@ -44,7 +48,7 @@
 <a name="User"></a>
 ## User
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\VPN\Server
+**Class**  : alphayax\freebox\api\v3\services\config\VPN\Server\User
 
 ### Public methods
 

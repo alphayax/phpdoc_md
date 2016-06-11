@@ -1,5 +1,9 @@
 # Storage
 
+**Namespace**  : alphayax\freebox\api\v3\services\Storage
+
+# Overview
+
 - [Disk](Storage.md#Disk)
 - [Partition](Storage.md#Partition)
 
@@ -7,7 +11,7 @@
 <a name="Disk"></a>
 ## Disk
 
-**Namespace**  : alphayax\freebox\api\v3\services\Storage
+**Class**  : alphayax\freebox\api\v3\services\Storage\Disk
 
 ### Public methods
 
@@ -21,7 +25,7 @@
 <a name="Partition"></a>
 ## Partition
 
-**Namespace**  : alphayax\freebox\api\v3\services\Storage
+**Class**  : alphayax\freebox\api\v3\services\Storage\Partition
 
 ### Public methods
 

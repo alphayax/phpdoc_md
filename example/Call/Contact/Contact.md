@@ -1,5 +1,9 @@
 # Contact
 
+**Namespace**  : alphayax\freebox\api\v3\services\Call\Contact
+
+# Overview
+
 - [ContactAddress](Contact.md#ContactAddress)
 - [ContactEmail](Contact.md#ContactEmail)
 - [ContactEntry](Contact.md#ContactEntry)
@@ -10,7 +14,7 @@
 <a name="ContactAddress"></a>
 ## ContactAddress
 
-**Namespace**  : alphayax\freebox\api\v3\services\Call\Contact
+**Class**  : alphayax\freebox\api\v3\services\Call\Contact\ContactAddress
 
 ### Public methods
 
@@ -25,7 +29,7 @@
 <a name="ContactEmail"></a>
 ## ContactEmail
 
-**Namespace**  : alphayax\freebox\api\v3\services\Call\Contact
+**Class**  : alphayax\freebox\api\v3\services\Call\Contact\ContactEmail
 
 ### Public methods
 
@@ -40,7 +44,7 @@
 <a name="ContactEntry"></a>
 ## ContactEntry
 
-**Namespace**  : alphayax\freebox\api\v3\services\Call\Contact
+**Class**  : alphayax\freebox\api\v3\services\Call\Contact\ContactEntry
 
 ### Public methods
 
@@ -60,7 +64,7 @@
 <a name="ContactNumber"></a>
 ## ContactNumber
 
-**Namespace**  : alphayax\freebox\api\v3\services\Call\Contact
+**Class**  : alphayax\freebox\api\v3\services\Call\Contact\ContactNumber
 
 ### Public methods
 
@@ -75,7 +79,7 @@
 <a name="ContactUrl"></a>
 ## ContactUrl
 
-**Namespace**  : alphayax\freebox\api\v3\services\Call\Contact
+**Class**  : alphayax\freebox\api\v3\services\Call\Contact\ContactUrl
 
 ### Public methods
 

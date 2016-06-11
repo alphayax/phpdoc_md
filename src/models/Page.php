@@ -56,8 +56,6 @@ class Page {
 
         $generatedMd = '';
 
-        /// TODO : Les liens relatifs profonds ne sont pas bons
-
         if( ! empty( $this->subPages)){
             /// SubPages
             foreach( $this->subPages as $subPageName => $subPage){
@@ -84,6 +82,10 @@ class Page {
 
         $generatedMd  = '';
         $generatedMd .= '# '. $this->pageName . PHP_EOL;
+        $generatedMd .= PHP_EOL;
+        $generatedMd .= '**Namespace**  : '. $this->namespace .PHP_EOL;
+        $generatedMd .= PHP_EOL;
+        $generatedMd .= '# Overview'. PHP_EOL;
         $generatedMd .= PHP_EOL;
         $generatedMd .= $this->generateTree();
         $generatedMd .= PHP_EOL;

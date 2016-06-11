@@ -1,5 +1,9 @@
 # NetworkShare
 
+**Namespace**  : alphayax\freebox\api\v3\services\config\NetworkShare
+
+# Overview
+
 - [Afp](NetworkShare.md#Afp)
 - [Samba](NetworkShare.md#Samba)
 
@@ -7,7 +11,7 @@
 <a name="Afp"></a>
 ## Afp
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\NetworkShare
+**Class**  : alphayax\freebox\api\v3\services\config\NetworkShare\Afp
 
 ### Public methods
 
@@ -19,7 +23,7 @@
 <a name="Samba"></a>
 ## Samba
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\NetworkShare
+**Class**  : alphayax\freebox\api\v3\services\config\NetworkShare\Samba
 
 ### Public methods
 

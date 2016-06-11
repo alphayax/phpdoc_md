@@ -1,5 +1,9 @@
 # login
 
+**Namespace**  : alphayax\freebox\api\v3\services\login
+
+# Overview
+
 - [Authorize](login.md#Authorize)
 - [Session](login.md#Session)
 
@@ -7,7 +11,7 @@
 <a name="Authorize"></a>
 ## Authorize
 
-**Namespace**  : alphayax\freebox\api\v3\services\login
+**Class**  : alphayax\freebox\api\v3\services\login\Authorize
 
 ### Public methods
 
@@ -22,7 +26,7 @@
 <a name="Session"></a>
 ## Session
 
-**Namespace**  : alphayax\freebox\api\v3\services\login
+**Class**  : alphayax\freebox\api\v3\services\login\Session
 
 ### Public methods
 

@@ -1,5 +1,9 @@
 # Call
 
+**Namespace**  : alphayax\freebox\api\v3\services\Call
+
+# Overview
+
 - [Contact](./Contact/Contact.md)
   - [ContactAddress](Contact/Contact.md#ContactAddress)
   - [ContactEmail](Contact/Contact.md#ContactEmail)
@@ -12,7 +16,7 @@
 <a name="CallEntry"></a>
 ## CallEntry
 
-**Namespace**  : alphayax\freebox\api\v3\services\Call
+**Class**  : alphayax\freebox\api\v3\services\Call\CallEntry
 
 ### Public methods
 

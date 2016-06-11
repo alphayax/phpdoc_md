@@ -1,5 +1,9 @@
 # Connection
 
+**Namespace**  : alphayax\freebox\api\v3\services\config\Connection
+
+# Overview
+
 - [DynDns](./DynDns/DynDns.md)
   - [DynDns](DynDns/DynDns.md#DynDns)
   - [NoIP](DynDns/DynDns.md#NoIP)
@@ -13,7 +17,7 @@
 <a name="Connection"></a>
 ## Connection
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\Connection
+**Class**  : alphayax\freebox\api\v3\services\config\Connection\Connection
 
 ### Public methods
 
@@ -28,7 +32,7 @@
 <a name="DynDns"></a>
 ## DynDns
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\Connection
+**Class**  : alphayax\freebox\api\v3\services\config\Connection\DynDns
 
 ### Public methods
 
@@ -41,7 +45,7 @@
 <a name="Ftth"></a>
 ## Ftth
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\Connection
+**Class**  : alphayax\freebox\api\v3\services\config\Connection\Ftth
 
 ### Public methods
 
@@ -52,7 +56,7 @@
 <a name="Xdsl"></a>
 ## Xdsl
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\Connection
+**Class**  : alphayax\freebox\api\v3\services\config\Connection\Xdsl
 
 ### Public methods
 

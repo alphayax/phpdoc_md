@@ -1,5 +1,9 @@
 # LAN
 
+**Namespace**  : alphayax\freebox\api\v3\services\config\LAN
+
+# Overview
+
 - [Browser](LAN.md#Browser)
 - [LAN](LAN.md#LAN)
 
@@ -7,7 +11,7 @@
 <a name="Browser"></a>
 ## Browser
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\LAN
+**Class**  : alphayax\freebox\api\v3\services\config\LAN\Browser
 
 ### Public methods
 
@@ -23,7 +27,7 @@
 <a name="LAN"></a>
 ## LAN
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\LAN
+**Class**  : alphayax\freebox\api\v3\services\config\LAN\LAN
 
 ### Public methods
 

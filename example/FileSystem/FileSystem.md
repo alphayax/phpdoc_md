@@ -1,5 +1,9 @@
 # FileSystem
 
+**Namespace**  : alphayax\freebox\api\v3\services\FileSystem
+
+# Overview
+
 - [FileSharingLink](FileSystem.md#FileSharingLink)
 - [FileSystemListing](FileSystem.md#FileSystemListing)
 - [FileSystemOperation](FileSystem.md#FileSystemOperation)
@@ -10,7 +14,7 @@
 <a name="FileSharingLink"></a>
 ## FileSharingLink
 
-**Namespace**  : alphayax\freebox\api\v3\services\FileSystem
+**Class**  : alphayax\freebox\api\v3\services\FileSystem\FileSharingLink
 
 ### Public methods
 
@@ -24,7 +28,7 @@
 <a name="FileSystemListing"></a>
 ## FileSystemListing
 
-**Namespace**  : alphayax\freebox\api\v3\services\FileSystem
+**Class**  : alphayax\freebox\api\v3\services\FileSystem\FileSystemListing
 
 ### Public methods
 
@@ -36,7 +40,7 @@
 <a name="FileSystemOperation"></a>
 ## FileSystemOperation
 
-**Namespace**  : alphayax\freebox\api\v3\services\FileSystem
+**Class**  : alphayax\freebox\api\v3\services\FileSystem\FileSystemOperation
 
 ### Public methods
 
@@ -58,7 +62,7 @@
 <a name="FileSystemTask"></a>
 ## FileSystemTask
 
-**Namespace**  : alphayax\freebox\api\v3\services\FileSystem
+**Class**  : alphayax\freebox\api\v3\services\FileSystem\FileSystemTask
 
 ### Public methods
 
@@ -73,7 +77,7 @@
 <a name="FileUpload"></a>
 ## FileUpload
 
-**Namespace**  : alphayax\freebox\api\v3\services\FileSystem
+**Class**  : alphayax\freebox\api\v3\services\FileSystem\FileUpload
 
 ### Public methods
 

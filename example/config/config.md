@@ -1,5 +1,9 @@
 # config
 
+**Namespace**  : alphayax\freebox\api\v3\services\config
+
+# Overview
+
 - [Connection](./Connection/Connection.md)
   - [DynDns](./Connection/DynDns/DynDns.md)
     - [DynDns](Connection/DynDns/DynDns.md#DynDns)
@@ -51,7 +55,7 @@
 <a name="DHCP"></a>
 ## DHCP
 
-**Namespace**  : alphayax\freebox\api\v3\services\config
+**Class**  : alphayax\freebox\api\v3\services\config\DHCP
 
 ### Public methods
 
@@ -63,7 +67,7 @@
 <a name="FTP"></a>
 ## FTP
 
-**Namespace**  : alphayax\freebox\api\v3\services\config
+**Class**  : alphayax\freebox\api\v3\services\config\FTP
 
 ### Public methods
 
@@ -75,7 +79,7 @@
 <a name="Freeplug"></a>
 ## Freeplug
 
-**Namespace**  : alphayax\freebox\api\v3\services\config
+**Class**  : alphayax\freebox\api\v3\services\config\Freeplug
 
 ### Public methods
 
@@ -88,7 +92,7 @@
 <a name="LCD"></a>
 ## LCD
 
-**Namespace**  : alphayax\freebox\api\v3\services\config
+**Class**  : alphayax\freebox\api\v3\services\config\LCD
 
 ### Public methods
 
@@ -100,7 +104,7 @@
 <a name="System"></a>
 ## System
 
-**Namespace**  : alphayax\freebox\api\v3\services\config
+**Class**  : alphayax\freebox\api\v3\services\config\System
 
 ### Public methods
 

@@ -1,5 +1,9 @@
 # SwitchPort
 
+**Namespace**  : alphayax\freebox\api\v3\services\config\SwitchPort
+
+# Overview
+
 - [Config](SwitchPort.md#Config)
 - [Stats](SwitchPort.md#Stats)
 - [Status](SwitchPort.md#Status)
@@ -8,7 +12,7 @@
 <a name="Config"></a>
 ## Config
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\SwitchPort
+**Class**  : alphayax\freebox\api\v3\services\config\SwitchPort\Config
 
 ### Public methods
 
@@ -20,7 +24,7 @@
 <a name="Stats"></a>
 ## Stats
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\SwitchPort
+**Class**  : alphayax\freebox\api\v3\services\config\SwitchPort\Stats
 
 ### Public methods
 
@@ -31,7 +35,7 @@
 <a name="Status"></a>
 ## Status
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\SwitchPort
+**Class**  : alphayax\freebox\api\v3\services\config\SwitchPort\Status
 
 ### Public methods
 

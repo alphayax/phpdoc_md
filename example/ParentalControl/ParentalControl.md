@@ -1,5 +1,9 @@
 # ParentalControl
 
+**Namespace**  : alphayax\freebox\api\v3\services\ParentalControl
+
+# Overview
+
 - [Filter](ParentalControl.md#Filter)
 - [FilterPlanning](ParentalControl.md#FilterPlanning)
 
@@ -7,7 +11,7 @@
 <a name="Filter"></a>
 ## Filter
 
-**Namespace**  : alphayax\freebox\api\v3\services\ParentalControl
+**Class**  : alphayax\freebox\api\v3\services\ParentalControl\Filter
 
 ### Public methods
 
@@ -25,7 +29,7 @@
 <a name="FilterPlanning"></a>
 ## FilterPlanning
 
-**Namespace**  : alphayax\freebox\api\v3\services\ParentalControl
+**Class**  : alphayax\freebox\api\v3\services\ParentalControl\FilterPlanning
 
 ### Public methods
 

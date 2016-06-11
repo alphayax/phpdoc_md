@@ -1,5 +1,9 @@
 # services
 
+**Namespace**  : alphayax\freebox\api\v3\services
+
+# Overview
+
 - [AirMedia](./AirMedia/AirMedia.md)
   - [AirMediaReceiver](AirMedia/AirMedia.md#AirMediaReceiver)
   - [Config](AirMedia/AirMedia.md#Config)

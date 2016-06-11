@@ -1,5 +1,9 @@
 # WiFi
 
+**Namespace**  : alphayax\freebox\api\v3\services\config\WiFi
+
+# Overview
+
 - [AccessPoint](WiFi.md#AccessPoint)
 - [Bss](WiFi.md#Bss)
 - [Config](WiFi.md#Config)
@@ -10,7 +14,7 @@
 <a name="AccessPoint"></a>
 ## AccessPoint
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\WiFi
+**Class**  : alphayax\freebox\api\v3\services\config\WiFi\AccessPoint
 
 ### Public methods
 
@@ -28,7 +32,7 @@
 <a name="Bss"></a>
 ## Bss
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\WiFi
+**Class**  : alphayax\freebox\api\v3\services\config\WiFi\Bss
 
 ### Public methods
 
@@ -41,7 +45,7 @@
 <a name="Config"></a>
 ## Config
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\WiFi
+**Class**  : alphayax\freebox\api\v3\services\config\WiFi\Config
 
 ### Public methods
 
@@ -54,7 +58,7 @@
 <a name="MacFilter"></a>
 ## MacFilter
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\WiFi
+**Class**  : alphayax\freebox\api\v3\services\config\WiFi\MacFilter
 
 ### Public methods
 
@@ -70,7 +74,7 @@
 <a name="Planning"></a>
 ## Planning
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\WiFi
+**Class**  : alphayax\freebox\api\v3\services\config\WiFi\Planning
 
 ### Public methods
 

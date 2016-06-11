@@ -1,5 +1,9 @@
 # VPN
 
+**Namespace**  : alphayax\freebox\api\v3\services\config\VPN
+
+# Overview
+
 - [Client](./Client/Client.md)
   - [Config](Client/Client.md#Config)
   - [Status](Client/Client.md#Status)

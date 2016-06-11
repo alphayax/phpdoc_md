@@ -1,5 +1,9 @@
 # download
 
+**Namespace**  : alphayax\freebox\api\v3\services\download
+
+# Overview
+
 - [BlackList](download.md#BlackList)
 - [Configuration](download.md#Configuration)
 - [Download](download.md#Download)
@@ -11,7 +15,7 @@
 <a name="BlackList"></a>
 ## BlackList
 
-**Namespace**  : alphayax\freebox\api\v3\services\download
+**Class**  : alphayax\freebox\api\v3\services\download\BlackList
 
 ### Public methods
 
@@ -25,7 +29,7 @@
 <a name="Configuration"></a>
 ## Configuration
 
-**Namespace**  : alphayax\freebox\api\v3\services\download
+**Class**  : alphayax\freebox\api\v3\services\download\Configuration
 
 ### Public methods
 
@@ -38,7 +42,7 @@
 <a name="Download"></a>
 ## Download
 
-**Namespace**  : alphayax\freebox\api\v3\services\download
+**Class**  : alphayax\freebox\api\v3\services\download\Download
 
 ### Public methods
 
@@ -56,7 +60,7 @@
 <a name="Feed"></a>
 ## Feed
 
-**Namespace**  : alphayax\freebox\api\v3\services\download
+**Class**  : alphayax\freebox\api\v3\services\download\Feed
 
 ### Public methods
 
@@ -77,7 +81,7 @@
 <a name="Peer"></a>
 ## Peer
 
-**Namespace**  : alphayax\freebox\api\v3\services\download
+**Class**  : alphayax\freebox\api\v3\services\download\Peer
 
 ### Public methods
 
@@ -88,7 +92,7 @@
 <a name="Tracker"></a>
 ## Tracker
 
-**Namespace**  : alphayax\freebox\api\v3\services\download
+**Class**  : alphayax\freebox\api\v3\services\download\Tracker
 
 ### Public methods
 

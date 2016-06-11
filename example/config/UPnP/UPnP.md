@@ -1,5 +1,9 @@
 # UPnP
 
+**Namespace**  : alphayax\freebox\api\v3\services\config\UPnP
+
+# Overview
+
 - [AV](UPnP.md#AV)
 - [IGD](UPnP.md#IGD)
 
@@ -7,7 +11,7 @@
 <a name="AV"></a>
 ## AV
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\UPnP
+**Class**  : alphayax\freebox\api\v3\services\config\UPnP\AV
 
 ### Public methods
 
@@ -19,7 +23,7 @@
 <a name="IGD"></a>
 ## IGD
 
-**Namespace**  : alphayax\freebox\api\v3\services\config\UPnP
+**Class**  : alphayax\freebox\api\v3\services\config\UPnP\IGD
 
 ### Public methods
 

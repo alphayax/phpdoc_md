@@ -49,7 +49,7 @@ class Chapter {
         $generatedMd .= '<a name="'. $rflxClass->getShortName() .'"></a>' . PHP_EOL;
         $generatedMd .= '## '. $rflxClass->getShortName() . PHP_EOL;
         $generatedMd .= PHP_EOL;
-        $generatedMd .= '**Namespace**  : '. $rflxClass->getNamespaceName() .PHP_EOL;
+        $generatedMd .= '**Class**  : '. $rflxClass->getName() .PHP_EOL;
         $generatedMd .= PHP_EOL;
 
         $generatedMd .= '### Public methods'. PHP_EOL;
