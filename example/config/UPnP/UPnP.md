@@ -13,8 +13,8 @@
 
 | Method | Description |
 |---|---|
-| `getConfiguration` |  | 
-| `setConfiguration` |  | 
+| `getConfiguration` | Get the current UPnP AV configuration | 
+| `setConfiguration` | Update the UPnP AV configuration | 
 
 <a name="IGD"></a>
 ## IGD
@@ -25,7 +25,7 @@
 
 | Method | Description |
 |---|---|
-| `getConfiguration` |  | 
-| `setConfiguration` |  | 
-| `getRedirections` |  | 
-| `deleteRedirectionFromId` |  | 
+| `getConfiguration` | Get the current UPnP AV configuration | 
+| `setConfiguration` | Update the UPnP AV configuration | 
+| `getRedirections` | Get the list of current redirection | 
+| `deleteRedirectionFromId` | Delete a redirection | 

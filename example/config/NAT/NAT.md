@@ -14,8 +14,8 @@
 
 | Method | Description |
 |---|---|
-| `getConfiguration` |  | 
-| `setConfiguration` |  | 
+| `getConfiguration` | Get the current Dmz configuration | 
+| `setConfiguration` | Update the current Dmz configuration | 
 
 <a name="IncomingPort"></a>
 ## IncomingPort
@@ -26,9 +26,9 @@
 
 | Method | Description |
 |---|---|
-| `getAll` |  | 
-| `getById` |  | 
-| `update` |  | 
+| `getAll` | Getting the list of incoming ports | 
+| `getById` | Getting a specific incoming port | 
+| `update` | Updating an incoming port | 
 
 <a name="PortForwarding"></a>
 ## PortForwarding
@@ -39,9 +39,9 @@
 
 | Method | Description |
 |---|---|
-| `getAll` |  | 
-| `getById` |  | 
-| `update` |  | 
-| `add` |  | 
-| `delete` |  | 
-| `deleteById` |  | 
+| `getAll` | Getting the list of port forwarding | 
+| `getById` | Getting a specific port forwarding | 
+| `update` | Update a specific port forwarding | 
+| `add` | Add a port forwarding | 
+| `delete` | Delete a port forwarding | 
+| `deleteById` | Delete a port forwarding | 

@@ -52,7 +52,7 @@ class Page {
         return array_pop( $namespaceComponents);
     }
 
-    public function generateTree( $pad = '') {
+    public function generateTree( $pad = '', $relativePath = '') {
 
         $generatedMd = '';
 
@@ -61,9 +61,9 @@ class Page {
         if( ! empty( $this->subPages)){
             /// SubPages
             foreach( $this->subPages as $subPageName => $subPage){
-                $subPageFile  = './' . $subPageName . DIRECTORY_SEPARATOR . $subPage->getPageBfe();
+                $subPageFile  = './' . $relativePath . $subPageName . DIRECTORY_SEPARATOR . $subPage->getPageBfe();
                 $generatedMd .=  "$pad- [$subPageName]($subPageFile)". PHP_EOL;
-                $generatedMd .= $subPage->generateTree( $pad . '  ');
+                $generatedMd .= $subPage->generateTree( $pad . '  ', $subPageName . DIRECTORY_SEPARATOR);
             }
         }
 

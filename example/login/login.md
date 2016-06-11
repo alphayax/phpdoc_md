@@ -13,8 +13,8 @@
 
 | Method | Description |
 |---|---|
-| `__construct` |  | 
-| `ask_authorization` |  | 
+| `__construct` | Authorize constructor. | 
+| `ask_authorization` | Contact the freebox and ask for App auth | 
 | `get_authorization_status` |  | 
 | `getStatus` |  | 
 | `getAppToken` |  | 

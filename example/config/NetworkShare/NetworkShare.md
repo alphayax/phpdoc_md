@@ -13,8 +13,8 @@
 
 | Method | Description |
 |---|---|
-| `getConfiguration` |  | 
-| `setConfiguration` |  | 
+| `getConfiguration` | Get the current Afp configuration | 
+| `setConfiguration` | Update the Afp configuration | 
 
 <a name="Samba"></a>
 ## Samba
@@ -25,5 +25,5 @@
 
 | Method | Description |
 |---|---|
-| `getConfiguration` |  | 
-| `setConfiguration` |  | 
+| `getConfiguration` | Get the current Samba configuration | 
+| `setConfiguration` | Update the Samba configuration | 

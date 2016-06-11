@@ -1,7 +1,7 @@
 # config
 
 - [Connection](./Connection/Connection.md)
-  - [DynDns](./DynDns/DynDns.md)
+  - [DynDns](./Connection/DynDns/DynDns.md)
     - [DynDns](#DynDns)
     - [NoIP](#NoIP)
     - [Ovh](#Ovh)
@@ -27,10 +27,10 @@
   - [AV](#AV)
   - [IGD](#IGD)
 - [VPN](./VPN/VPN.md)
-  - [Client](./Client/Client.md)
+  - [Client](./VPN/Client/Client.md)
     - [Config](#Config)
     - [Status](#Status)
-  - [Server](./Server/Server.md)
+  - [Server](./VPN/Server/Server.md)
     - [Config](#Config)
     - [Connection](#Connection)
     - [IpPool](#IpPool)
@@ -81,9 +81,9 @@
 
 | Method | Description |
 |---|---|
-| `getNetworks` |  | 
-| `getFromId` |  | 
-| `resetFromId` |  | 
+| `getNetworks` | Get the current system info | 
+| `getFromId` | Get a particular Freeplug information | 
+| `resetFromId` | Reset a Freeplug | 
 
 <a name="LCD"></a>
 ## LCD
@@ -106,5 +106,5 @@
 
 | Method | Description |
 |---|---|
-| `getConfiguration` |  | 
-| `reboot` |  | 
+| `getConfiguration` | Get the current system info | 
+| `reboot` | Reboot the Freebox | 

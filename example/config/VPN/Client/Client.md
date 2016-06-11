@@ -13,7 +13,7 @@
 
 | Method | Description |
 |---|---|
-| `getAll` |  | 
+| `getAll` | Get VPN Client configuration list | 
 | `getFromId` |  | 
 | `add` |  | 
 | `delete` |  | 
@@ -29,5 +29,5 @@
 
 | Method | Description |
 |---|---|
-| `getStatus` |  | 
-| `getLogs` |  | 
+| `getStatus` | Get the VPN client status | 
+| `getLogs` | Get the VPN client Logs | 

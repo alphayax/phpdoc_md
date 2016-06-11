@@ -15,8 +15,8 @@
 
 | Method | Description |
 |---|---|
-| `getConfigurationFromId` |  | 
-| `setConfiguration` |  | 
+| `getConfigurationFromId` | Get a VPN config | 
+| `setConfiguration` | Update the VPN configuration | 
 
 <a name="Connection"></a>
 ## Connection
@@ -27,8 +27,8 @@
 
 | Method | Description |
 |---|---|
-| `getAll` |  | 
-| `closeFromId` |  | 
+| `getAll` | Get the list of connections | 
+| `closeFromId` | Close a given connection | 
 
 <a name="IpPool"></a>
 ## IpPool
@@ -39,7 +39,7 @@
 
 | Method | Description |
 |---|---|
-| `getReservations` |  | 
+| `getReservations` | Get the VPN server IP pool reservations | 
 
 <a name="User"></a>
 ## User
@@ -50,10 +50,10 @@
 
 | Method | Description |
 |---|---|
-| `getAll` |  | 
-| `getFromLogin` |  | 
-| `add` |  | 
-| `delete` |  | 
-| `deleteFromLogin` |  | 
-| `update` |  | 
+| `getAll` | Get the list of VPNUser | 
+| `getFromLogin` | Gets the VPNUser with the given login | 
+| `add` | Creates a new VPNUser | 
+| `delete` | Deletes the VPNUser | 
+| `deleteFromLogin` | Deletes the VPNUser | 
+| `update` | Update a VPN Use | 
 | `getConfigurationFile` |  | 

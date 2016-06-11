@@ -19,11 +19,11 @@
 
 | Method | Description |
 |---|---|
-| `getStatus` |  | 
-| `getConfiguration` |  | 
-| `setConfiguration` |  | 
-| `getIPv6Configuration` |  | 
-| `setIPv6Configuration` |  | 
+| `getStatus` | Get the current Connection status | 
+| `getConfiguration` | Get the current Connection configuration | 
+| `setConfiguration` | Get the current Connection configuration | 
+| `getIPv6Configuration` | Get the current IPv6 Connection configuration | 
+| `setIPv6Configuration` | Update the IPv6 Connection configuration | 
 
 <a name="DynDns"></a>
 ## DynDns
@@ -34,9 +34,9 @@
 
 | Method | Description |
 |---|---|
-| `getStatus` |  | 
-| `getConfig` |  | 
-| `setConfig` |  | 
+| `getStatus` | Get the current DDns status | 
+| `getConfig` | Get the current DDns Configuration | 
+| `setConfig` | Set the DDns Configuration | 
 
 <a name="Ftth"></a>
 ## Ftth
@@ -47,7 +47,7 @@
 
 | Method | Description |
 |---|---|
-| `getStatus` |  | 
+| `getStatus` | Get the current Connection status | 
 
 <a name="Xdsl"></a>
 ## Xdsl
@@ -58,4 +58,4 @@
 
 | Method | Description |
 |---|---|
-| `getStatus` |  | 
+| `getStatus` | Get the current Connection status | 

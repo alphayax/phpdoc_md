@@ -16,11 +16,11 @@
 
 | Method | Description |
 |---|---|
-| `getFromId` |  | 
-| `create` |  | 
-| `delete` |  | 
-| `deleteFromId` |  | 
-| `update` |  | 
+| `getFromId` | Get the address (with the given id) | 
+| `create` | Add an address | 
+| `delete` | Remove an address | 
+| `deleteFromId` | Remove an address (with the given id) | 
+| `update` | Update an address | 
 
 <a name="ContactEmail"></a>
 ## ContactEmail
@@ -31,11 +31,11 @@
 
 | Method | Description |
 |---|---|
-| `getFromId` |  | 
-| `create` |  | 
-| `delete` |  | 
-| `deleteFromId` |  | 
-| `update` |  | 
+| `getFromId` | Get the email contact (with the given id) | 
+| `create` | Create a new email contact | 
+| `delete` | Remove an email contact | 
+| `deleteFromId` | Remove an email contact (with the given id) | 
+| `update` | Update an email contact | 
 
 <a name="ContactEntry"></a>
 ## ContactEntry
@@ -46,16 +46,16 @@
 
 | Method | Description |
 |---|---|
-| `getAll` |  | 
-| `getFromId` |  | 
-| `create` |  | 
-| `update` |  | 
-| `delete` |  | 
-| `deleteFromId` |  | 
-| `getContactNumbersFromContactId` |  | 
-| `getContactAddressesFromContactId` |  | 
-| `getContactEmailsFromContactId` |  | 
-| `getContactUrlsFromContactId` |  | 
+| `getAll` | List all contacts | 
+| `getFromId` | Get a specific contact entry | 
+| `create` | Add a contact entry | 
+| `update` | Update a contact entry | 
+| `delete` | Remove a contact entry | 
+| `deleteFromId` | Remove a contact entry (with the specified id) | 
+| `getContactNumbersFromContactId` | Get all numbers associated to a given contact id | 
+| `getContactAddressesFromContactId` | Get all addresses associated to a given contact id | 
+| `getContactEmailsFromContactId` | Get all email addresses associated to a given contact id | 
+| `getContactUrlsFromContactId` | Get all URLs associated to a given contact id | 
 
 <a name="ContactNumber"></a>
 ## ContactNumber
@@ -66,11 +66,11 @@
 
 | Method | Description |
 |---|---|
-| `getFromId` |  | 
-| `create` |  | 
-| `delete` |  | 
-| `deleteFromId` |  | 
-| `update` |  | 
+| `getFromId` | Get the contact number (with the given id) | 
+| `create` | Add a new contact number | 
+| `delete` | Remove a contact number | 
+| `deleteFromId` | Remove a contact number (with the specified id) | 
+| `update` | Update a contact number | 
 
 <a name="ContactUrl"></a>
 ## ContactUrl
@@ -81,8 +81,8 @@
 
 | Method | Description |
 |---|---|
-| `getFromId` |  | 
-| `create` |  | 
-| `delete` |  | 
-| `deleteFromId` |  | 
-| `update` |  | 
+| `getFromId` | Get the contact url (with the given id) | 
+| `create` | Add a new contact url | 
+| `delete` | Remove a contact url | 
+| `deleteFromId` | Remove a contact url (with the given id) | 
+| `update` | Update a contact url | 

@@ -72,10 +72,9 @@ class Chapter {
                 $method2 = new \Zend_Reflection_Method( $rflxClass->getName(), $method->getName());
                 $docBlock = $method2->getDocblock();
 
-                $shortDesc = substr( $docBlock->getShortDescription(), 0, strpos( $docBlock->getShortDescription(), PHP_EOL));
+                $shortDesc = str_replace( PHP_EOL, ' ', $docBlock->getShortDescription());
                 $desc = str_replace( PHP_EOL, ' ', $shortDesc);
                 $generatedMd .= '| `'. $method2->getName() .'` | '. $desc . ' | ' . PHP_EOL;
-                //    print_r( $docBlock);
             }
             catch( \Exception $e){
                 // Unable to parse PHPDoc Block... Skip it :(

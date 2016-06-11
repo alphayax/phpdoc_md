@@ -17,10 +17,10 @@
 
 | Method | Description |
 |---|---|
-| `getAllFromDownloadTaskId` | Get the list of blacklist entries for a given download | 
-| `emptyBlackListFromDownloadId` | Empty the blacklist for a given download | 
-| `removeBlackListEntry` |  | 
-| `addBlackListEntry` |  | 
+| `getAllFromDownloadTaskId` | Get the list of blacklist entries for a given download Attempting to call this method on a download other than bittorent will fail. | 
+| `emptyBlackListFromDownloadId` | Empty the blacklist for a given download This call allow to remove all global entries, and entries related to the given download | 
+| `removeBlackListEntry` | Delete a particular blacklist entry | 
+| `addBlackListEntry` | Add a blacklist entry | 
 
 <a name="Configuration"></a>
 ## Configuration
@@ -31,9 +31,9 @@
 
 | Method | Description |
 |---|---|
-| `getConfiguration` |  | 
-| `setConfiguration` |  | 
-| `updateThrottlingMode` | You can force the throttling mode using this method. | 
+| `getConfiguration` | Get the current Download configuration | 
+| `setConfiguration` | Update the Download configuration | 
+| `updateThrottlingMode` | You can force the throttling mode using this method. You can use any of the throttling modes defined in DlThrottlingConfig. | 
 
 <a name="Download"></a>
 ## Download
@@ -44,14 +44,14 @@
 
 | Method | Description |
 |---|---|
-| `getAll` |  | 
-| `getFromId` |  | 
-| `update` |  | 
+| `getAll` | Returns the collection of all Download tasks | 
+| `getFromId` | Returns the Download task with the given id | 
+| `update` | Update a download task | 
 | `addFromUrl` |  | 
 | `addFromUrls` |  | 
 | `addFromFile` |  | 
-| `getStats` |  | 
-| `getFilesFromId` |  | 
+| `getStats` | Returns the Download task with the given id | 
+| `getFilesFromId` | Returns the Download task with the given id | 
 
 <a name="Feed"></a>
 ## Feed
@@ -62,17 +62,17 @@
 
 | Method | Description |
 |---|---|
-| `getAllFeeds` |  | 
-| `getFeedFromId` |  | 
-| `addFeed` |  | 
-| `removeFeed` |  | 
-| `updateFeed` |  | 
-| `refreshFeed` | Remotely fetches the RSS feed and updates it. | 
-| `refreshFeeds` | Remotely fetches the RSS feed and updates it. | 
-| `getFeedItems` |  | 
-| `updateFeedItem` |  | 
-| `downloadFeedItem` |  | 
-| `markFeedAsRead` |  | 
+| `getAllFeeds` | Get the list of all download Feeds | 
+| `getFeedFromId` | Gets the DownloadFeed with the given id | 
+| `addFeed` | Add a Download Feed | 
+| `removeFeed` | Delete a Download Feed | 
+| `updateFeed` | Update a Download Feed | 
+| `refreshFeed` | Remotely fetches the RSS feed and updates it. Note that if the remote feed specifies a TTL, trying to update before the ttl will result in feed_is_recent error | 
+| `refreshFeeds` | Remotely fetches the RSS feed and updates it. Note that if the remote feed specifies a TTL, trying to update before the ttl will result in feed_is_recent error | 
+| `getFeedItems` | Returns the collection of all DownloadFeedItems for a given DownloadFeed | 
+| `updateFeedItem` | Returns the collection of all DownloadFeedItems for a given DownloadFeed | 
+| `downloadFeedItem` | Returns the collection of all DownloadFeedItems for a given DownloadFeed | 
+| `markFeedAsRead` | Returns the collection of all DownloadFeedItems for a given DownloadFeed | 
 
 <a name="Peer"></a>
 ## Peer
@@ -83,7 +83,7 @@
 
 | Method | Description |
 |---|---|
-| `getAll` | Get the list of peers for a given Download | 
+| `getAll` | Get the list of peers for a given Download Attempting to call this method on a download other than bittorent will fail | 
 
 <a name="Tracker"></a>
 ## Tracker
@@ -94,7 +94,7 @@
 
 | Method | Description |
 |---|---|
-| `getAll` | Each torrent Download task has one or more DownloadTracker. | 
-| `add` | Add a new tracker | 
-| `remove` | Remove a tracker | 
-| `update` | Update a tracker | 
+| `getAll` | Each torrent Download task has one or more DownloadTracker. Each tracker is identified by its announce URL. | 
+| `add` | Add a new tracker Attempting to call this method on a download other than bittorent will fail | 
+| `remove` | Remove a tracker Attempting to call this method on a download other than bittorent will fail | 
+| `update` | Update a tracker Attempting to call this method on a download other than bittorent will fail | 

@@ -18,12 +18,12 @@
 |---|---|
 | `getAll` |  | 
 | `getFromId` |  | 
-| `getAllowedCombFromId` |  | 
-| `getStationsFromId` |  | 
+| `getAllowedCombFromId` | To be able to allow user to pick a valid channel combination for a given AP you should use the following api to retrieve the list of allowed channel combination. | 
+| `getStationsFromId` | To be able to allow user to pick a valid channel combination for a given AP you should use the following api to retrieve the list of allowed channel combination. | 
 | `update` |  | 
-| `getNeighborsFromId` |  | 
-| `refreshNeighborsScan` | WARNING during the scan the AP will be unavailable. Therefore, you should ask for user confirmation prior to launching a scan. | 
-| `getChannelUsageFromId` |  | 
+| `getNeighborsFromId` | Get the list of Neighbor seen by the AP | 
+| `refreshNeighborsScan` | WARNING during the scan the AP will be unavailable. Therefore, you should ask for user confirmation prior to launching a scan. Once launched you should wait until the ap state comes back from scanning to get updated info. | 
+| `getChannelUsageFromId` | List Wi-Fi channels usage | 
 
 <a name="Bss"></a>
 ## Bss
@@ -34,9 +34,9 @@
 
 | Method | Description |
 |---|---|
-| `getAll` |  | 
-| `getFromId` |  | 
-| `update` |  | 
+| `getAll` | Get the list of Freebox Access Points | 
+| `getFromId` | Get the list of Freebox Access Points | 
+| `update` | Get the list of Freebox Access Points | 
 
 <a name="Config"></a>
 ## Config
@@ -49,7 +49,7 @@
 |---|---|
 | `getConfiguration` |  | 
 | `setConfiguration` |  | 
-| `resetConfiguration` |  | 
+| `resetConfiguration` | Reset Wifi to default configuration | 
 
 <a name="MacFilter"></a>
 ## MacFilter

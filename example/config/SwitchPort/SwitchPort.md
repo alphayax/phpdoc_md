@@ -14,8 +14,8 @@
 
 | Method | Description |
 |---|---|
-| `getFromPortId` |  | 
-| `update` |  | 
+| `getFromPortId` | Get a port configuration | 
+| `update` | Update a port configuration | 
 
 <a name="Stats"></a>
 ## Stats
@@ -26,7 +26,7 @@
 
 | Method | Description |
 |---|---|
-| `getFromPortId` |  | 
+| `getFromPortId` | Get a port configuration | 
 
 <a name="Status"></a>
 ## Status
@@ -37,4 +37,4 @@
 
 | Method | Description |
 |---|---|
-| `getStatus` |  | 
+| `getStatus` | Get the current switch status | 

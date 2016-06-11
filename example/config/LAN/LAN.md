@@ -18,7 +18,7 @@
 | `getHostsFromInterfaceName` |  | 
 | `getHostFromId` |  | 
 | `updateHostFromInterfaceId` |  | 
-| `wakeOnLan` |  | 
+| `wakeOnLan` | Send Wake ok Lan packet to an host | 
 
 <a name="LAN"></a>
 ## LAN

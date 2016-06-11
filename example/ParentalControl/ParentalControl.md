@@ -15,7 +15,7 @@
 |---|---|
 | `getConfiguration` |  | 
 | `setConfiguration` |  | 
-| `getAll` |  | 
+| `getAll` | Get the list of disks | 
 | `getFromId` |  | 
 | `update` |  | 
 | `delete` |  | 

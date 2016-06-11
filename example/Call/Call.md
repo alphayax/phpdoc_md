@@ -18,8 +18,8 @@
 
 | Method | Description |
 |---|---|
-| `getAll` |  | 
-| `getFromId` |  | 
-| `delete` |  | 
-| `deleteFromId` |  | 
-| `update` |  | 
+| `getAll` | List every calls | 
+| `getFromId` | Access a given call entry | 
+| `delete` | Delete a call entry | 
+| `deleteFromId` | Delete a call entry | 
+| `update` | Update a given call entry | 
