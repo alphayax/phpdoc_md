@@ -39,4 +39,52 @@ class ClassChapter {
     public function getReflexion(){
         return $this->reflexion;
     }
+
+
+    public function write() {
+
+        $rflxClass = $this->reflexion;
+
+        $generatedMd  = PHP_EOL;
+        $generatedMd .= '<a name="'. $rflxClass->getShortName() .'"></a>' . PHP_EOL;
+        $generatedMd .= '## '. $rflxClass->getShortName() . PHP_EOL;
+        $generatedMd .= PHP_EOL;
+        $generatedMd .= '**Namespace**  : '. $rflxClass->getNamespaceName() .PHP_EOL;
+        $generatedMd .= PHP_EOL;
+
+        $generatedMd .= '### Public methods'. PHP_EOL;
+        $generatedMd .= PHP_EOL;
+        $generatedMd .= '| Method | Description |'. PHP_EOL;
+        $generatedMd .= '|---|---|'. PHP_EOL;
+
+        $methods = $rflxClass->getMethods();
+        foreach ( $methods as $method){
+
+            if( ! $method->isPublic()){
+                continue;
+            }
+
+            if( $method->getDeclaringClass()->getName() != $rflxClass->getName()){
+                continue;
+            }
+
+            try{
+                $method2 = new \Zend_Reflection_Method( $rflxClass->getName(), $method->getName());
+                $docBlock = $method2->getDocblock();
+
+                // TODO : Truncker au premier retour a la ligne plutot que de remplacer par un espace
+                $desc = str_replace( PHP_EOL, ' ', $docBlock->getShortDescription());
+                $generatedMd .= '| `'. $method2->getName() .'` | '. $desc . ' | ' . PHP_EOL;
+                //    print_r( $docBlock);
+            }
+            catch( \Exception $e){
+                /// TODO : Mieux gerer ca
+                echo "CACA !! La methode " . $method->getName() . " existe pas dans la classe ". $rflxClass->getName();
+            }
+
+        }
+
+        return $generatedMd;
+
+    }
 }

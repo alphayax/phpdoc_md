@@ -97,51 +97,7 @@ class Page {
 
         /// Class
         foreach ( $this->chapters as $class){
-
-
-            /// TODO : chapter->write
-            $rflxClass = $class->getReflexion();
-
-            $generatedMd .= PHP_EOL;
-            $generatedMd .= '<a name="'. $rflxClass->getShortName() .'"></a>"' . PHP_EOL;
-            $generatedMd .= '## '. $rflxClass->getShortName() . PHP_EOL;
-            $generatedMd .= PHP_EOL;
-            $generatedMd .= '**Namespace**  : '. $rflxClass->getNamespaceName() .PHP_EOL;
-            $generatedMd .= PHP_EOL;
-
-            $generatedMd .= '### Public methods'. PHP_EOL;
-            $generatedMd .= PHP_EOL;
-            $generatedMd .= '| Method | Description |'. PHP_EOL;
-            $generatedMd .= '|---|---|'. PHP_EOL;
-
-            $methods = $rflxClass->getMethods();
-            foreach ( $methods as $method){
-
-                if( ! $method->isPublic()){
-                    continue;
-                }
-
-                if( $method->getDeclaringClass()->getName() != $class->getReflexion()->getName()){
-                    continue;
-                }
-
-                try{
-                    $method2 = new \Zend_Reflection_Method( $class->getReflexion()->getName(), $method->getName());
-                    $docBlock = $method2->getDocblock();
-
-                    // TODO : Truncker au premier retour a la ligne plutot que de remplacer par un espace
-                    $desc = str_replace( PHP_EOL, ' ', $docBlock->getShortDescription());
-                    $generatedMd .= '| `'. $method2->getName() .'` | '. $desc . ' | ' . PHP_EOL;
-                    //    print_r( $docBlock);
-                }
-                catch( \Exception $e){
-                    /// TODO : Mieux gerer ca
-                   echo "CACA !! La methode " . $method->getName() . " existe pas dans la classe ". $class->getReflexion()->getName();
-                }
-
-            }
-
-
+            $generatedMd .= $class->write();
         }
 
         @mkdir( $this->page_rd, 0777, true);

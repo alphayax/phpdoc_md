@@ -15,7 +15,7 @@ class MdGen {
     /** @var string[] */
     protected $loadedClasses;
 
-    /** @var models\Chapter[] */
+    /** @var models\ClassChapter[] */
     protected $chapters = [];
 
     /** @var models\Page */
@@ -62,19 +62,6 @@ class MdGen {
     }
 
     /**
-     * @param $chapterNamespace
-     */
-    public function addChapter( $chapterNamespace) {
-        $chapter = new models\Chapter( $chapterNamespace);
-        foreach( $this->loadedClasses as $class){
-            if( 0 === substr_compare( $class, $chapterNamespace, 0, strlen( $chapterNamespace))){
-                $chapter->addClass( $class);
-            }
-        }
-        $this->chapters[] = $chapter;
-    }
-
-    /**
      *
      */
     public function generate() {
@@ -82,23 +69,13 @@ class MdGen {
         $result = [];
 
         foreach( $this->loadedClasses as $class){
-
             $result[] = new ClassChapter( $class);
-
         }
-
-
 
         $this->rootPage = new models\Page( $this->rootNamespace, $result);
         $this->rootPage->setDirectory( '.');
         $this->rootPage->write();
 
-        print_r( $this->rootPage);
-/*
-        foreach( $this->chapters as $chapter){
-            $chapter->generate();
-        }
-*/
     }
 
 }
