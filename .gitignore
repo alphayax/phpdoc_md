@@ -1,0 +1,13 @@
+
+# IntelliJ project files
+/.idea/
+
+# Composer
+/composer.phar
+/composer.lock
+/vendor/*
+
+# Project files
+/app_token
+/exemple/**/app_token
+/clover.xml
