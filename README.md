@@ -10,8 +10,9 @@ A PHPDoc markdown documentation generator in PHP.
 <!-- 
 [![Build Status](https://travis-ci.org/alphayax/phpdoc_md.svg?branch=master)](https://travis-ci.org/alphayax/phpdoc_md)
 [![Coverage](https://api.codacy.com/project/badge/Coverage/f3569cf671f04b8ab6d699be3fd011e5)](https://www.codacy.com/app/alphayax/freebox_api_php?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alphayax/freebox_api_php&amp;utm_campaign=Badge_Coverage)
-[![Codacy](https://api.codacy.com/project/badge/Grade/f3569cf671f04b8ab6d699be3fd011e5)](https://www.codacy.com/app/alphayax/freebox_api_php?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alphayax/freebox_api_php&amp;utm_campaign=Badge_Grade)
 -->
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/92d84b7d5f284c248937099ffc7afa5a)](https://www.codacy.com/app/alphayax/phpdoc_md?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=alphayax/phpdoc_md&amp;utm_campaign=Badge_Grade)
 
 [![License](https://poser.pugx.org/alphayax/phpdoc_md/license)](https://packagist.org/packages/alphayax/phpdoc_md)
 [![Total Downloads](https://poser.pugx.org/alphayax/phpdoc_md/downloads)](https://packagist.org/packages/alphayax/phpdoc_md)
@@ -19,6 +20,10 @@ A PHPDoc markdown documentation generator in PHP.
 ## Installation
 
 Use [composer](https://getcomposer.org/) ! 
+
+```
+composer require alphayax/phpdoc_md
+```
 
 
 ## Usage
