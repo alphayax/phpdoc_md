@@ -33,11 +33,20 @@ This example (from [example](example/)) will generate a markdown documentation f
 ```php
 require_once '../vendor/autoload.php';
 
-$srcDir     = __DIR__.'/../vendor/alphayax/freebox_api_php/freebox/api/v3/services';
-$namespace  = 'alphayax\freebox\api\v3\services';
+$srcDir     = __DIR__.'/../src';
+$namespace  = 'alphayax\mdGen';
 
 $gen = new \alphayax\mdGen\MdGen( $srcDir, $namespace);
-$gen->filterSubClasses( \alphayax\freebox\api\v3\Service::class);
-$gen->generate( 'services');
+$gen->generate( 'md_gen');
 ```
+
+## Documentation 
+
+The documentation is auto-generated with this sources :)
+
+- [models](docs/models/models.md)
+    - [Chapter](docs/models/models.md#Chapter)
+    - [Page](docs/models/models.md#Page)
+- [MdGen](docs/mdGen.md#MdGen)
+
 

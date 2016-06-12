@@ -31,6 +31,7 @@ class MdGen {
         $this->rootNamespace = $rootNamespace;
         $this->srcDirectory  = $srcDirectory;
         $this->loadClasses();
+        $this->filterNamespace( $rootNamespace);
     }
 
     /**
@@ -38,16 +39,33 @@ class MdGen {
      */
     protected function loadClasses(){
         $ModelsDir = new Directory( $this->srcDirectory);
+        if( ! $ModelsDir->exists()){
+            throw new \Exception( 'Source directory not found : '. $this->srcDirectory);
+        }
         $ModelFiles = $ModelsDir->getFilesByExtension( 'php', true);
         foreach( $ModelFiles as $modelFile){
             require_once $modelFile;
         }
 
-        /// TODO : Filter sur le namespace donné dans le constructeur ?
         $this->loadedClasses = get_declared_classes();
     }
 
     /**
+     * Filter class who are in a specific namespace
+     * @param $namespaceName
+     */
+    public function filterNamespace( $namespaceName) {
+        $FilteredClasses = [];
+        foreach( $this->loadedClasses as $loadedClass){
+            if( 0 == substr_compare( $loadedClass, $namespaceName, 0, strlen( $namespaceName))){
+                $FilteredClasses[] = $loadedClass;
+            }
+        }
+        $this->loadedClasses = $FilteredClasses;
+    }
+
+    /**
+     * Filter class who are sub-classes of a specific class
      * @param $className
      */
     public function filterSubClasses( $className) {

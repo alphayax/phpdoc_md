@@ -46,6 +46,7 @@ class Chapter {
     }
 
     /**
+     * Get the reflected class
      * @return \ReflectionClass
      */
     public function getReflexion(){
@@ -53,6 +54,7 @@ class Chapter {
     }
 
     /**
+     * Generate chapter markdown
      * @return string
      */
     public function generate() {
@@ -73,6 +75,7 @@ class Chapter {
     }
 
     /**
+     * Generate the reflected class public methods markdown
      * @return string
      */
     protected function generatePublicMethods() {
@@ -107,10 +110,9 @@ class Chapter {
             catch( \Exception $e){
                 // Unable to parse PHPDoc Block... Skip it :(
             }
-
         }
 
         return $generatedMd;
     }
-    
+
 }

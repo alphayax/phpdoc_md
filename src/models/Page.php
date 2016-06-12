@@ -50,6 +50,10 @@ class Page {
         }
     }
 
+    /**
+     * Compute the page name (according to the page namespace)
+     * @return string
+     */
     protected function computePageName(){
         $namespaceComponents = explode( '\\', $this->namespace);
         return array_pop( $namespaceComponents);
@@ -69,7 +73,7 @@ class Page {
             foreach( $this->subPages as $subPageName => $subPage){
                 $subPageFile  = './' . $relativePath . $subPageName . DIRECTORY_SEPARATOR . $subPage->getPageBfe();
                 $generatedMd .=  "$pad- [$subPageName]($subPageFile)". PHP_EOL;
-                $generatedMd .= $subPage->generateTree( $pad . '  ', $relativePath . $subPageName . DIRECTORY_SEPARATOR);
+                $generatedMd .= $subPage->generateTree( $pad . '    ', $relativePath . $subPageName . DIRECTORY_SEPARATOR);
             }
         }
 
@@ -90,12 +94,9 @@ class Page {
      * Write markdown file
      */
     public function write(){
-
-        /// Page content
         $generatedMd  = '';
         $generatedMd .= $this->generateHeader();
         $generatedMd .= $this->generateChapters();
-
 
         $this->writeSubPages();
 
@@ -105,7 +106,7 @@ class Page {
     }
 
     /**
-     *
+     * Write sub pages of this page
      */
     public function writeSubPages() {
         foreach( $this->subPages as $subPageName => $subPage) {
@@ -116,6 +117,7 @@ class Page {
     }
 
     /**
+     * Generate page chapters
      * @return string
      */
     protected function generateChapters() {
@@ -128,22 +130,28 @@ class Page {
 
 
     /**
+     * Generate page header
      * @return string
      */
     protected function generateHeader() {
         $generatedMd  = '';
         $generatedMd .= '# '. $this->pageName . PHP_EOL;
         $generatedMd .= PHP_EOL;
+
         $generatedMd .= '**Namespace**  : '. $this->namespace .PHP_EOL;
         $generatedMd .= PHP_EOL;
+
         $generatedMd .= '# Overview'. PHP_EOL;
         $generatedMd .= PHP_EOL;
+
         $generatedMd .= $this->generateTree();
         $generatedMd .= PHP_EOL;
+
         return $generatedMd;
     }
 
     /**
+     * Define the current page directory
      * @param $string
      */
     public function setDirectory( $string) {
@@ -151,11 +159,11 @@ class Page {
     }
 
     /**
+     * Return the page basename file with extension
      * @return string
      */
     public function getPageBfe() {
         return $this->page_bfe;
     }
-
 
 }
