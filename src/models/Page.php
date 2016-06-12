@@ -1,6 +1,10 @@
 <?php
 namespace alphayax\mdGen\models;
 
+/**
+ * Class Page
+ * @package alphayax\mdGen\models
+ */
 class Page {
 
     /** @var Chapter[] */
@@ -21,30 +25,29 @@ class Page {
     /**
      * Page constructor
      * @param string    $pageNamespace
-     * @param Chapter[] $classes
+     * @param Chapter[] $chapters
      */
-    public function __construct( $pageNamespace, array $classes) {
+    public function __construct( $pageNamespace, array $chapters) {
         $this->namespace = $pageNamespace;
         $this->pageName  = $this->computePageName();
         $this->page_bfe  = $this->pageName . '.md';
 
-        $tutu = [];
-        foreach( $classes as $class){
+        $pagesBtComponents = [];
+        foreach( $chapters as $chapter){
 
-            if( $class->getNamespace() == $pageNamespace){
-                $this->chapters[] = $class;
+            if( $chapter->getNamespace() == $pageNamespace){
+                $this->chapters[] = $chapter;
                 continue;
             }
 
-            $component = $class->getNextComponent( $pageNamespace);
-            $tutu[ $component][] = $class;
+            $component = $chapter->getNextComponent( $pageNamespace);
+            $pagesBtComponents[ $component][] = $chapter;
         }
 
-        $subPages = array_keys( $tutu);
+        $subPages = array_keys( $pagesBtComponents);
         foreach( $subPages as $subPage){
-            $this->subPages[$subPage] = new Page( $pageNamespace . '\\'. $subPage, $tutu[$subPage]);
+            $this->subPages[$subPage] = new Page( $pageNamespace . '\\'. $subPage, $pagesBtComponents[$subPage]);
         }
-
     }
 
     protected function computePageName(){
@@ -52,12 +55,17 @@ class Page {
         return array_pop( $namespaceComponents);
     }
 
+    /**
+     * Generate overview markdown tree
+     * @param string $pad
+     * @param string $relativePath
+     * @return string
+     */
     public function generateTree( $pad = '', $relativePath = '') {
-
         $generatedMd = '';
 
+        /// SubPages
         if( ! empty( $this->subPages)){
-            /// SubPages
             foreach( $this->subPages as $subPageName => $subPage){
                 $subPageFile  = './' . $relativePath . $subPageName . DIRECTORY_SEPARATOR . $subPage->getPageBfe();
                 $generatedMd .=  "$pad- [$subPageName]($subPageFile)". PHP_EOL;
@@ -78,8 +86,51 @@ class Page {
         return $generatedMd;
     }
 
+    /**
+     * Write markdown file
+     */
     public function write(){
 
+        /// Page content
+        $generatedMd  = '';
+        $generatedMd .= $this->generateHeader();
+        $generatedMd .= $this->generateChapters();
+
+
+        $this->writeSubPages();
+
+        /// Write page
+        @mkdir( $this->page_rd, 0777, true);
+        file_put_contents( $this->page_rd . DIRECTORY_SEPARATOR . $this->page_bfe, $generatedMd);
+    }
+
+    /**
+     *
+     */
+    public function writeSubPages() {
+        foreach( $this->subPages as $subPageName => $subPage) {
+            $subPageDirectory = $this->page_rd . DIRECTORY_SEPARATOR . $subPageName;
+            $subPage->setDirectory($subPageDirectory);
+            $subPage->write();
+        }
+    }
+
+    /**
+     * @return string
+     */
+    protected function generateChapters() {
+        $generatedMd  = '';
+        foreach( $this->chapters as $class){
+            $generatedMd .= $class->generate();
+        }
+        return $generatedMd;
+    }
+
+
+    /**
+     * @return string
+     */
+    protected function generateHeader() {
         $generatedMd  = '';
         $generatedMd .= '# '. $this->pageName . PHP_EOL;
         $generatedMd .= PHP_EOL;
@@ -89,25 +140,12 @@ class Page {
         $generatedMd .= PHP_EOL;
         $generatedMd .= $this->generateTree();
         $generatedMd .= PHP_EOL;
-
-        /// SubPages
-        foreach( $this->subPages as $subPageName => $subPage){
-            $subPageDirectory   = $this->page_rd . DIRECTORY_SEPARATOR . $subPageName;
-            $subPage->setDirectory( $subPageDirectory);
-            $subPage->write();
-        }
-
-
-        /// Class
-        foreach ( $this->chapters as $class){
-            $generatedMd .= $class->write();
-        }
-
-        @mkdir( $this->page_rd, 0777, true);
-        file_put_contents( $this->page_rd . DIRECTORY_SEPARATOR . $this->page_bfe, $generatedMd);
+        return $generatedMd;
     }
 
-
+    /**
+     * @param $string
+     */
     public function setDirectory( $string) {
         $this->page_rd = $string;
     }

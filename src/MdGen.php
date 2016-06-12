@@ -39,7 +39,7 @@ class MdGen {
     protected function loadClasses(){
         $ModelsDir = new Directory( $this->srcDirectory);
         $ModelFiles = $ModelsDir->getFilesByExtension( 'php', true);
-        foreach ($ModelFiles as $modelFile){
+        foreach( $ModelFiles as $modelFile){
             require_once $modelFile;
         }
 
@@ -57,25 +57,30 @@ class MdGen {
                 $FilteredClasses[] = $loadedClass;
             }
         }
-
         $this->loadedClasses = $FilteredClasses;
     }
 
     /**
-     *
+     * Create a chapter form loaded classes
+     * @return array
      */
-    public function generate() {
-
-        $result = [];
-
+    protected function getChaptersFromLoadedClasses(){
+        $chapters = [];
         foreach( $this->loadedClasses as $class){
-            $result[] = new Chapter( $class);
+            $chapters[] = new Chapter( $class);
         }
+        return $chapters;
+    }
 
-        $this->rootPage = new models\Page( $this->rootNamespace, $result);
-        $this->rootPage->setDirectory( '.');
+    /**
+     * Generate markdown files
+     * @param string $directory
+     */
+    public function generate( $directory = '.'){
+        $chapters = $this->getChaptersFromLoadedClasses();
+        $this->rootPage = new models\Page( $this->rootNamespace, $chapters);
+        $this->rootPage->setDirectory( $directory);
         $this->rootPage->write();
-
     }
 
 }

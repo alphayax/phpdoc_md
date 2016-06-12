@@ -1,5 +1,7 @@
 
-# --
+# PHPDoc Md
+
+A PHPDoc markdown documentation generator in PHP.
 
 ![stable](https://poser.pugx.org/alphayax/freebox_api_php/v/stable)
 ![unstable](https://poser.pugx.org/alphayax/freebox_api_php/v/unstable)
@@ -10,4 +12,24 @@
 ![codacy](https://api.codacy.com/project/badge/Grade/f3569cf671f04b8ab6d699be3fd011e5)
 
 ![license](https://img.shields.io/packagist/l/alphayax/freebox_api_php.svg)
+
+## Installation
+
+Use [composer](https://getcomposer.org/) ! 
+
+
+## Usage
+
+This example (from [example](example/)) will generate a markdown documentation for classes in the given namespace : 
+
+```php
+require_once '../vendor/autoload.php';
+
+$srcDir     = __DIR__.'/../vendor/alphayax/freebox_api_php/freebox/api/v3/services';
+$namespace  = 'alphayax\freebox\api\v3\services';
+
+$gen = new \alphayax\mdGen\MdGen( $srcDir, $namespace);
+$gen->filterSubClasses( \alphayax\freebox\api\v3\Service::class);
+$gen->generate( 'services');
+```
 
