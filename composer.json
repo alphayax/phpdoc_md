@@ -1,6 +1,6 @@
 {
-  "name": "alphayax/php_md_reflexion_generator",
-  "description": "Markdown documentation PHP reflexion generator",
+  "name": "alphayax/phpdoc_md",
+  "description": "A PHPDoc markdown documentation generator in PHP",
   "license": "MIT",
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -11,10 +11,10 @@
     }
   ],
   "require" : {
-    "php": ">=5.5.0",
-    "alphayax/freebox_api_php" : "dev-master"
+    "php": ">=5.5.0"
   },
   "require-dev" : {
+    "alphayax/freebox_api_php" : "^0.8.9",
     "phpunit/phpunit": "^5.4.0",
     "zf1/zend-reflection": "1.12.*",
     "codacy/coverage": "<2.0.0"
