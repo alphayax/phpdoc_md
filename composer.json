@@ -23,5 +23,8 @@
     "psr-4": {
       "alphayax\\mdGen\\": "./src"
     }
+  },
+  "support": {
+    "issues": "https://github.com/alphayax/phpdoc_md/issues"
   }
 }
