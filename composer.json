@@ -2,6 +2,7 @@
   "name": "alphayax/phpdoc_md",
   "description": "A PHPDoc markdown documentation generator in PHP",
   "license": "MIT",
+  "keywords": ["phpdoc", "markdown", "documentation generator"],
   "minimum-stability": "dev",
   "prefer-stable": true,
   "authors": [
@@ -12,8 +13,7 @@
   ],
   "require" : {
     "php": ">=5.5.0",
-    "zf1/zend-reflection": "1.12.*",
-    "alphayax/php_utils" : ">=1.1.2 <2.0.0"
+    "zf1/zend-reflection": "^1.12.11"
   },
   "require-dev" : {
     "phpunit/phpunit": "^5.4.0",

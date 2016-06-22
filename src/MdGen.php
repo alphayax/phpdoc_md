@@ -1,7 +1,6 @@
 <?php
 namespace alphayax\mdGen;
 use alphayax\mdGen\models\Chapter;
-use alphayax\utils\file_system\Directory;
 
 /**
  * Class MdGen
@@ -38,13 +37,16 @@ class MdGen {
      * Load class in the source directory
      */
     protected function loadClasses(){
-        $ModelsDir = new Directory( $this->srcDirectory);
-        if( ! $ModelsDir->exists()){
+        if( ! is_dir( $this->srcDirectory)){
             throw new \Exception( 'Source directory not found : '. $this->srcDirectory);
         }
-        $ModelFiles = $ModelsDir->getFilesByExtension( 'php', true);
-        foreach( $ModelFiles as $modelFile){
-            require_once $modelFile;
+
+        $objects = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator( $this->srcDirectory), \RecursiveIteratorIterator::SELF_FIRST);
+        $Regex = new \RegexIterator( $objects, '/^.+\.php$/i', \RecursiveRegexIterator::GET_MATCH);
+        foreach( $Regex as $name => $object){
+            if ( ! empty( $name)) {
+                require_once $name;
+            }
         }
 
         $this->loadedClasses = get_declared_classes();
