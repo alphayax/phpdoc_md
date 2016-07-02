@@ -18,6 +18,9 @@ class Chapter implements \ArrayAccess {
     /** @var Method[] */
     protected $methods;
 
+    /** @var string Class type (Interface, Trait or Class) */
+    protected $type;
+
     /**
      * ClassChapter constructor.
      * @param string $class
@@ -25,6 +28,7 @@ class Chapter implements \ArrayAccess {
     public function __construct( $class){
         $this->class = $class;
         $this->reflexion = new \ReflectionClass( $class);
+        $this->computeType();
 
         $methods = $this->reflexion->getMethods();
         foreach ( $methods as $method){
@@ -41,6 +45,21 @@ class Chapter implements \ArrayAccess {
 
             $this->methods[] = new Method( $this->reflexion->getName(), $method->getName());
         }
+    }
+
+    /**
+     * Determine the type of class
+     */
+    protected function computeType(){
+        if( interface_exists( $this->class, false)){
+            $this->type = 'Interface';
+            return;
+        }
+        if( trait_exists( $this->class, false)){
+            $this->type = 'Trait';
+            return;
+        }
+        $this->type = 'Class';
     }
 
     /**
@@ -74,4 +93,10 @@ class Chapter implements \ArrayAccess {
         return $this->reflexion;
     }
 
+    /**
+     * Return the real kind of class (Trait, Interface, Class)
+     */
+    public function getType(){
+
+    }
 }
