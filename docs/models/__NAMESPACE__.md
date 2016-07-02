@@ -8,9 +8,10 @@
 - [NamespaceMd](__NAMESPACE__.md#NamespaceMd)
 - [ClassMd](__NAMESPACE__.md#ClassMd)
 - [MethodMd](__NAMESPACE__.md#MethodMd)
-
+- [ParamMd](__NAMESPACE__.md#ParamMd)
 
 ---
+
 <a name="NamespaceMd"></a>
 ## NamespaceMd
 
@@ -52,6 +53,23 @@
 ## MethodMd
 
 **Class**  : alphayax\mdGen\models\MethodMd
+
+### Public methods
+
+| Method | Description |
+|---|---|
+| `hasParams` |  |
+| `getParams` |  |
+| `getModifiers` |  |
+| `offsetExists` | Whether a offset exists |
+| `offsetGet` | Offset to retrieve |
+| `offsetSet` | Offset to set |
+| `offsetUnset` | Offset to unset |
+
+<a name="ParamMd"></a>
+## ParamMd
+
+**Class**  : alphayax\mdGen\models\ParamMd
 
 ### Public methods
 

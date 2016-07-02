@@ -107,11 +107,29 @@ class NamespaceMd implements \ArrayAccess {
 
         $generatedMd = $template->render( $this);
 
-        $this->writeSubPages();
-
         /// Write page
         @mkdir( $this->page_rd, 0777, true);
         file_put_contents( $this->page_rd . DIRECTORY_SEPARATOR . $this->page_bfe, $generatedMd);
+
+
+        $this->writeMdClasses();
+        $this->writeSubPages();
+    }
+
+    /**
+     *
+     */
+    protected function writeMdClasses() {
+
+        $m = new \Mustache_Engine([
+            'loader'          => new \Mustache_Loader_FilesystemLoader( __DIR__.'/../views'),
+            'partials_loader' => new \Mustache_Loader_FilesystemLoader(__DIR__ . '/../views/MethodMd'),
+
+        ]);
+        foreach( $this->classMds as $classMd){
+            $generatedMd = $m->loadTemplate('Class')->render( $classMd);
+            file_put_contents( $this->page_rd . DIRECTORY_SEPARATOR . $classMd->getReflexion()->getShortName() . '.md', $generatedMd);
+        }
     }
 
     /**
@@ -135,7 +153,7 @@ class NamespaceMd implements \ArrayAccess {
 
     /**
      * Return the page basename file with extension
-     * @return string
+     * @return string The page base name
      */
     public function getPageBfe() {
         return $this->page_bfe;

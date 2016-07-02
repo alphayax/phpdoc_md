@@ -16,10 +16,16 @@ class ClassMd implements \ArrayAccess {
     protected $reflexion;
 
     /** @var MethodMd[] */
+    protected $publicMethods;
+
+    /** @var MethodMd[] */
     protected $methods;
 
     /** @var string Class type (Interface, Trait or Class) */
     protected $type;
+
+    /** @var array */
+    protected $properties = [];
 
     /**
      * ClassChapter constructor.
@@ -29,9 +35,16 @@ class ClassMd implements \ArrayAccess {
         $this->class = $class;
         $this->reflexion = new \ReflectionClass( $class);
         $this->computeType();
+        $properties = $this->reflexion->getProperties();
+        foreach ($properties as $property){
+            $this->properties[] = $property->getName();
+        }
 
         $methods = $this->reflexion->getMethods();
         foreach ( $methods as $method){
+
+            $methodMd = new MethodMd( $this->reflexion->getName(), $method->getName());
+            $this->methods[] = $methodMd;
 
             /// Filter only public and non constructor methods
             if( ! $method->isPublic() || $method->isConstructor()){
@@ -43,7 +56,7 @@ class ClassMd implements \ArrayAccess {
                 continue;
             }
 
-            $this->methods[] = new MethodMd( $this->reflexion->getName(), $method->getName());
+            $this->publicMethods[] = $methodMd;
         }
     }
 

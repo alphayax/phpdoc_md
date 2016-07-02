@@ -1,0 +1,35 @@
+
+# **{{ type }}** {{ reflexion.getShortName }}
+
+Full name : `{{ class }}`
+
+## Properties
+
+{{# properties}}
+- {{.}}
+{{/ properties}}
+
+## Methods summary
+
+| Method | Description |
+|---|---|
+{{# methods }}
+| `{{name}}` | {{description}} |
+{{/ methods }}
+
+## Methods details
+
+{{# methods }}
+### `{{name}}`
+
+__{{description}}__
+
+
+{{> Signature}}
+
+{{> Param}}
+
+{{> Return}}
+
+
+{{/ methods }}

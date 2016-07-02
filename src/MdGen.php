@@ -57,7 +57,7 @@ class MdGen {
 
     /**
      * Filter class who are in a specific namespace
-     * @param $namespaceName
+     * @param string $namespaceName Namespace Name to filter
      */
     public function filterNamespace( $namespaceName) {
         $FilteredClasses = [];
@@ -71,7 +71,7 @@ class MdGen {
 
     /**
      * Filter class who are sub-classes of a specific class
-     * @param $className
+     * @param string $className Super class name to filter
      */
     public function filterSubClasses( $className) {
         $FilteredClasses = [];
@@ -85,19 +85,19 @@ class MdGen {
 
     /**
      * Create a chapter form loaded classes
-     * @return array
+     * @return ClassMd[]
      */
     protected function generateClassMdFromLoadedClasses(){
-        $chapters = [];
+        $classMds = [];
         foreach( $this->loadedClasses as $class){
-            $chapters[] = new ClassMd( $class);
+            $classMds[] = new ClassMd( $class);
         }
-        return $chapters;
+        return $classMds;
     }
 
     /**
      * Generate markdown files
-     * @param string $directory
+     * @param string $directory Path to generated files
      */
     public function generate( $directory = '.'){
         $chapters = $this->generateClassMdFromLoadedClasses();
