@@ -1,17 +1,22 @@
 <?php
 namespace alphayax\mdGen\models;
+use alphayax\mdGen\utils;
 
 /**
  * Class Chapter
  * @package alphayax\mdGen\models
  */
-class Chapter {
+class Chapter implements \ArrayAccess {
+    use utils\arrayAccessProperties;
 
     /** @var string */
     protected $class;
 
     /** @var \ReflectionClass */
     protected $reflexion;
+
+    /** @var Method[] */
+    protected $methods;
 
     /**
      * ClassChapter constructor.
@@ -20,6 +25,22 @@ class Chapter {
     public function __construct( $class){
         $this->class = $class;
         $this->reflexion = new \ReflectionClass( $class);
+
+        $methods = $this->reflexion->getMethods();
+        foreach ( $methods as $method){
+
+            /// Filter only public and non constructor methods
+            if( ! $method->isPublic() || $method->isConstructor()){
+                continue;
+            }
+
+            /// Filter only methods inside class (not derived)
+            if( $method->getDeclaringClass()->getName() != $this->reflexion->getName()){
+                continue;
+            }
+
+            $this->methods[] = new Method( $this->reflexion->getName(), $method->getName());
+        }
     }
 
     /**
@@ -51,68 +72,6 @@ class Chapter {
      */
     public function getReflexion(){
         return $this->reflexion;
-    }
-
-    /**
-     * Generate chapter markdown
-     * @return string
-     */
-    public function generate() {
-
-        /// Anchor + title 2
-        $generatedMd  = PHP_EOL;
-        $generatedMd .= '<a name="'. $this->reflexion->getShortName() .'"></a>' . PHP_EOL;
-        $generatedMd .= '## '. $this->reflexion->getShortName() . PHP_EOL;
-
-        /// Class full name
-        $generatedMd .= PHP_EOL;
-        $generatedMd .= '**Class**  : '. $this->reflexion->getName() .PHP_EOL;
-
-        /// Public methods
-        $generatedMd .= $this->generatePublicMethods();
-
-        return $generatedMd;
-    }
-
-    /**
-     * Generate the reflected class public methods markdown
-     * @return string
-     */
-    protected function generatePublicMethods() {
-        $generatedMd  = PHP_EOL;
-        $generatedMd .= '### Public methods'. PHP_EOL;
-
-        $generatedMd .= PHP_EOL;
-        $generatedMd .= '| Method | Description |'. PHP_EOL;
-        $generatedMd .= '|---|---|'. PHP_EOL;
-
-        $methods = $this->reflexion->getMethods();
-        foreach ( $methods as $method){
-
-            /// Filter only public and non constructor methods
-            if( ! $method->isPublic() || $method->isConstructor()){
-                continue;
-            }
-
-            /// Filter only methods inside class (not derived)
-            if( $method->getDeclaringClass()->getName() != $this->reflexion->getName()){
-                continue;
-            }
-
-            try{
-                $method2 = new \Zend_Reflection_Method( $this->reflexion->getName(), $method->getName());
-                $docBlock = $method2->getDocblock();
-
-                $shortDesc  = str_replace( PHP_EOL, ' ', $docBlock->getShortDescription());
-                $desc       = str_replace( PHP_EOL, ' ', $shortDesc);
-                $generatedMd .= '| `'. $method2->getName() .'` | '. $desc . ' | ' . PHP_EOL;
-            }
-            catch( \Exception $e){
-                // Unable to parse PHPDoc Block... Skip it :(
-            }
-        }
-
-        return $generatedMd;
     }
 
 }

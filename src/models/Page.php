@@ -1,11 +1,13 @@
 <?php
 namespace alphayax\mdGen\models;
+use alphayax\mdGen\utils;
 
 /**
  * Class Page
  * @package alphayax\mdGen\models
  */
-class Page {
+class Page implements \ArrayAccess {
+    use utils\arrayAccessProperties;
 
     /** @var Chapter[] */
     protected $chapters = [];
@@ -21,6 +23,9 @@ class Page {
 
     /** @var string : Relative path to directory page */
     protected $page_rd = '';
+
+    /** @var string */
+    protected $pageName;
 
     /**
      * Page constructor
@@ -94,9 +99,13 @@ class Page {
      * Write markdown file
      */
     public function write(){
-        $generatedMd  = '';
-        $generatedMd .= $this->generateHeader();
-        $generatedMd .= $this->generateChapters();
+
+        $m = new \Mustache_Engine([
+            'loader' => new \Mustache_Loader_FilesystemLoader( __DIR__.'/../views')
+        ]);
+        $template = $m->loadTemplate('Page');
+
+        $generatedMd = $template->render( $this);
 
         $this->writeSubPages();
 
@@ -111,45 +120,11 @@ class Page {
     public function writeSubPages() {
         foreach( $this->subPages as $subPageName => $subPage) {
             $subPageDirectory = $this->page_rd . DIRECTORY_SEPARATOR . $subPageName;
-            $subPage->setDirectory($subPageDirectory);
+            $subPage->setDirectory( $subPageDirectory);
             $subPage->write();
         }
     }
-
-    /**
-     * Generate page chapters
-     * @return string
-     */
-    protected function generateChapters() {
-        $generatedMd  = '';
-        foreach( $this->chapters as $class){
-            $generatedMd .= $class->generate();
-        }
-        return $generatedMd;
-    }
-
-
-    /**
-     * Generate page header
-     * @return string
-     */
-    protected function generateHeader() {
-        $generatedMd  = '';
-        $generatedMd .= '# '. $this->pageName . PHP_EOL;
-        $generatedMd .= PHP_EOL;
-
-        $generatedMd .= '**Namespace**  : '. $this->namespace .PHP_EOL;
-        $generatedMd .= PHP_EOL;
-
-        $generatedMd .= '# Overview'. PHP_EOL;
-        $generatedMd .= PHP_EOL;
-
-        $generatedMd .= $this->generateTree();
-        $generatedMd .= PHP_EOL;
-
-        return $generatedMd;
-    }
-
+    
     /**
      * Define the current page directory
      * @param $string

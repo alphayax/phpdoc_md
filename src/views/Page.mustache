@@ -1,0 +1,25 @@
+
+# {{ pageName }}
+
+**Namespace**  : {{ namespace }}
+
+# Overview
+
+{{ generateTree }}
+
+---
+{{# chapters }}
+<a name="{{getReflexion.getShortName}}"></a>
+## {{getReflexion.getShortName}}
+
+**Class**  : {{getReflexion.getName}}
+
+### Public methods
+
+| Method | Description |
+|---|---|
+{{# methods }}
+| `{{name}}` | {{description}} |
+{{/ methods }}
+
+{{/ chapters }}

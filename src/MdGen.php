@@ -49,7 +49,10 @@ class MdGen {
             }
         }
 
-        $this->loadedClasses = get_declared_classes();
+        $classes    = get_declared_classes();
+        $traits     = get_declared_traits();
+        $interfaces = get_declared_interfaces();
+        $this->loadedClasses = array_merge( $classes, $traits, $interfaces);
     }
 
     /**

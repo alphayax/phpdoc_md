@@ -1,3 +1,4 @@
+
 # models
 
 **Namespace**  : alphayax\mdGen\models
@@ -6,8 +7,10 @@
 
 - [Page](models.md#Page)
 - [Chapter](models.md#Chapter)
+- [Method](models.md#Method)
 
 
+---
 <a name="Page"></a>
 ## Page
 
@@ -17,11 +20,15 @@
 
 | Method | Description |
 |---|---|
-| `generateTree` | Generate overview markdown tree | 
-| `write` | Write markdown file | 
-| `writeSubPages` | Write sub pages of this page | 
-| `setDirectory` | Define the current page directory | 
-| `getPageBfe` | Return the page basename file with extension | 
+| `generateTree` | Generate overview markdown tree |
+| `write` | Write markdown file |
+| `writeSubPages` | Write sub pages of this page |
+| `setDirectory` | Define the current page directory |
+| `getPageBfe` | Return the page basename file with extension |
+| `offsetExists` | Whether a offset exists |
+| `offsetGet` | Offset to retrieve |
+| `offsetSet` | Offset to set |
+| `offsetUnset` | Offset to unset |
 
 <a name="Chapter"></a>
 ## Chapter
@@ -32,7 +39,25 @@
 
 | Method | Description |
 |---|---|
-| `getNextComponent` | Get the next namespace component (according the NS given) | 
-| `getNamespace` | Get the namespace of the current reflected class | 
-| `getReflexion` | Get the reflected class | 
-| `generate` | Generate chapter markdown | 
+| `getNextComponent` | Get the next namespace component (according the NS given) |
+| `getNamespace` | Get the namespace of the current reflected class |
+| `getReflexion` | Get the reflected class |
+| `offsetExists` | Whether a offset exists |
+| `offsetGet` | Offset to retrieve |
+| `offsetSet` | Offset to set |
+| `offsetUnset` | Offset to unset |
+
+<a name="Method"></a>
+## Method
+
+**Class**  : alphayax\mdGen\models\Method
+
+### Public methods
+
+| Method | Description |
+|---|---|
+| `offsetExists` | Whether a offset exists |
+| `offsetGet` | Offset to retrieve |
+| `offsetSet` | Offset to set |
+| `offsetUnset` | Offset to unset |
+
