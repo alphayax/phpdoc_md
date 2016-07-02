@@ -41,12 +41,12 @@ $gen->generate( 'md_gen');
 
 The documentation is auto-generated with this sources :)
 
-- [models](docs/models/models.md)
-    - [Page](docs/models/models.md#Page)
-    - [Chapter](docs/models/models.md#Chapter)
-    - [Method](docs/models/models.md#Method)
-- [utils](docs/utils/utils.md)
-    - [arrayAccessProperties](docs/utils/utils.md#arrayAccessProperties)
-- [MdGen](docs/mdGen.md#MdGen)
+- [models](docs/models/__NAMESPACE__.md)
+    - [NamespaceMd](docs/models/__NAMESPACE__.md#NamespaceMd)
+    - [ClassMd](docs/models/__NAMESPACE__.md#ClassMd)
+    - [MethodMd](docs/models/__NAMESPACE__.md#MethodMd)
+- [utils](docs/utils/__NAMESPACE__.md)
+    - [arrayAccessProperties](docs/utils/__NAMESPACE__.md#arrayAccessProperties)
+- [MdGen](docs/__NAMESPACE__.md#MdGen)
 
 

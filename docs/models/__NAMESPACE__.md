@@ -5,16 +5,16 @@
 
 # Overview
 
-- [Page](models.md#Page)
-- [Chapter](models.md#Chapter)
-- [Method](models.md#Method)
+- [NamespaceMd](__NAMESPACE__.md#NamespaceMd)
+- [ClassMd](__NAMESPACE__.md#ClassMd)
+- [MethodMd](__NAMESPACE__.md#MethodMd)
 
 
 ---
-<a name="Page"></a>
-## Page
+<a name="NamespaceMd"></a>
+## NamespaceMd
 
-**Class**  : alphayax\mdGen\models\Page
+**Class**  : alphayax\mdGen\models\NamespaceMd
 
 ### Public methods
 
@@ -30,10 +30,10 @@
 | `offsetSet` | Offset to set |
 | `offsetUnset` | Offset to unset |
 
-<a name="Chapter"></a>
-## Chapter
+<a name="ClassMd"></a>
+## ClassMd
 
-**Class**  : alphayax\mdGen\models\Chapter
+**Class**  : alphayax\mdGen\models\ClassMd
 
 ### Public methods
 
@@ -48,10 +48,10 @@
 | `offsetSet` | Offset to set |
 | `offsetUnset` | Offset to unset |
 
-<a name="Method"></a>
-## Method
+<a name="MethodMd"></a>
+## MethodMd
 
-**Class**  : alphayax\mdGen\models\Method
+**Class**  : alphayax\mdGen\models\MethodMd
 
 ### Public methods
 

@@ -6,7 +6,7 @@ use alphayax\mdGen\utils;
  * Class Chapter
  * @package alphayax\mdGen\models
  */
-class Chapter implements \ArrayAccess {
+class ClassMd implements \ArrayAccess {
     use utils\arrayAccessProperties;
 
     /** @var string */
@@ -15,7 +15,7 @@ class Chapter implements \ArrayAccess {
     /** @var \ReflectionClass */
     protected $reflexion;
 
-    /** @var Method[] */
+    /** @var MethodMd[] */
     protected $methods;
 
     /** @var string Class type (Interface, Trait or Class) */
@@ -43,7 +43,7 @@ class Chapter implements \ArrayAccess {
                 continue;
             }
 
-            $this->methods[] = new Method( $this->reflexion->getName(), $method->getName());
+            $this->methods[] = new MethodMd( $this->reflexion->getName(), $method->getName());
         }
     }
 

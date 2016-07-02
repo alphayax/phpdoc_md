@@ -1,6 +1,6 @@
 <?php
 namespace alphayax\mdGen;
-use alphayax\mdGen\models\Chapter;
+use alphayax\mdGen\models\ClassMd;
 
 /**
  * Class MdGen
@@ -14,10 +14,10 @@ class MdGen {
     /** @var string[] */
     protected $loadedClasses;
 
-    /** @var models\Chapter[] */
+    /** @var models\ClassMd[] */
     protected $chapters = [];
 
-    /** @var models\Page */
+    /** @var models\NamespaceMd */
     protected $rootPage;
 
 
@@ -87,10 +87,10 @@ class MdGen {
      * Create a chapter form loaded classes
      * @return array
      */
-    protected function getChaptersFromLoadedClasses(){
+    protected function generateClassMdFromLoadedClasses(){
         $chapters = [];
         foreach( $this->loadedClasses as $class){
-            $chapters[] = new Chapter( $class);
+            $chapters[] = new ClassMd( $class);
         }
         return $chapters;
     }
@@ -100,8 +100,8 @@ class MdGen {
      * @param string $directory
      */
     public function generate( $directory = '.'){
-        $chapters = $this->getChaptersFromLoadedClasses();
-        $this->rootPage = new models\Page( $this->rootNamespace, $chapters);
+        $chapters = $this->generateClassMdFromLoadedClasses();
+        $this->rootPage = new models\NamespaceMd( $this->rootNamespace, $chapters);
         $this->rootPage->setDirectory( $directory);
         $this->rootPage->write();
     }

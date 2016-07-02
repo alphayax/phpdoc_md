@@ -6,13 +6,13 @@ use alphayax\mdGen\utils;
  * Class Page
  * @package alphayax\mdGen\models
  */
-class Page implements \ArrayAccess {
+class NamespaceMd implements \ArrayAccess {
     use utils\arrayAccessProperties;
 
-    /** @var Chapter[] */
-    protected $chapters = [];
+    /** @var ClassMd[] */
+    protected $classMds = [];
 
-    /** @var Page[] */
+    /** @var NamespaceMd[] */
     protected $subPages = [];
 
     /** @var string */
@@ -30,18 +30,18 @@ class Page implements \ArrayAccess {
     /**
      * Page constructor
      * @param string    $pageNamespace
-     * @param Chapter[] $chapters
+     * @param ClassMd[] $chapters
      */
     public function __construct( $pageNamespace, array $chapters) {
         $this->namespace = $pageNamespace;
         $this->pageName  = $this->computePageName();
-        $this->page_bfe  = $this->pageName . '.md';
+        $this->page_bfe  = '__NAMESPACE__.md';
 
         $pagesBtComponents = [];
         foreach( $chapters as $chapter){
 
             if( $chapter->getNamespace() == $pageNamespace){
-                $this->chapters[] = $chapter;
+                $this->classMds[] = $chapter;
                 continue;
             }
 
@@ -51,7 +51,7 @@ class Page implements \ArrayAccess {
 
         $subPages = array_keys( $pagesBtComponents);
         foreach( $subPages as $subPage){
-            $this->subPages[$subPage] = new Page( $pageNamespace . '\\'. $subPage, $pagesBtComponents[$subPage]);
+            $this->subPages[$subPage] = new NamespaceMd( $pageNamespace . '\\'. $subPage, $pagesBtComponents[$subPage]);
         }
     }
 
@@ -83,8 +83,8 @@ class Page implements \ArrayAccess {
         }
 
         /// Chapters
-        if( ! empty( $this->chapters)){
-            foreach( $this->chapters as $chapter){
+        if( ! empty( $this->classMds)){
+            foreach($this->classMds as $chapter){
                 $chapterName   = $chapter->getReflexion()->getShortName();
                 $chapterFile   = $relativePath . $this->getPageBfe();
                 $chapterAnchor = $chapterFile .'#'. $chapter->getReflexion()->getShortName();
@@ -124,7 +124,7 @@ class Page implements \ArrayAccess {
             $subPage->write();
         }
     }
-    
+
     /**
      * Define the current page directory
      * @param $string

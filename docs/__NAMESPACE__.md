@@ -5,13 +5,13 @@
 
 # Overview
 
-- [models](./models/models.md)
-    - [Page](models/models.md#Page)
-    - [Chapter](models/models.md#Chapter)
-    - [Method](models/models.md#Method)
-- [utils](./utils/utils.md)
-    - [arrayAccessProperties](utils/utils.md#arrayAccessProperties)
-- [MdGen](mdGen.md#MdGen)
+- [models](./models/__NAMESPACE__.md)
+    - [NamespaceMd](models/__NAMESPACE__.md#NamespaceMd)
+    - [ClassMd](models/__NAMESPACE__.md#ClassMd)
+    - [MethodMd](models/__NAMESPACE__.md#MethodMd)
+- [utils](./utils/__NAMESPACE__.md)
+    - [arrayAccessProperties](utils/__NAMESPACE__.md#arrayAccessProperties)
+- [MdGen](__NAMESPACE__.md#MdGen)
 
 
 ---
