@@ -29,7 +29,7 @@
         $m = new \Mustache_Engine([
             'loader' => new \Mustache_Loader_FilesystemLoader( __DIR__.'/../views')
         ]);
-        $template = $m->loadTemplate('Page');
+        $template = $m->loadTemplate('Namespace');
 
         $generatedMd = $template->render( $this);
 

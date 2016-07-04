@@ -31,7 +31,7 @@
     public function generateTree( $pad = '', $relativePath = '') {
         $generatedMd = '';
 
-        /// SubPages
+        /// SubNamespaces
         if( ! empty( $this->subPages)){
             foreach( $this->subPages as $subPageName => $subPage){
                 $subPageFile  = './' . $relativePath . $subPageName . DIRECTORY_SEPARATOR . $subPage->getPageBfe();
@@ -40,7 +40,7 @@
             }
         }
 
-        /// Chapters
+        /// Classes
         if( ! empty( $this->classMds)){
             foreach($this->classMds as $classMd){
                 $className   = $classMd->getReflexion()->getShortName();
