@@ -10,6 +10,11 @@ Full name : `alphayax\mdGen\models\ClassMd`
 - `methods`
 - `type`
 - `properties`
+- `constants`
+
+## Constants
+
+> No constants
 
 ## Methods summary
 

@@ -30,11 +30,14 @@
         $this->class = $class;
         $this->reflexion = new \ReflectionClass( $class);
         $this->computeType();
+
+        /// Properties
         $properties = $this->reflexion->getProperties();
         foreach ($properties as $property){
             $this->properties[] = $property->getName();
         }
 
+        /// Methods
         $methods = $this->reflexion->getMethods();
         foreach ( $methods as $method){
 
@@ -52,6 +55,14 @@
             }
 
             $this->publicMethods[] = $methodMd;
+        }
+
+        /// Constants
+        foreach ( $this->reflexion->getConstants() as $constantName => $constantValue){
+            $this->constants[] = [
+                'name'  => $constantName,
+                'value' => $constantValue,
+            ];
         }
     }
 

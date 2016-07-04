@@ -27,6 +27,9 @@ class ClassMd implements \ArrayAccess {
     /** @var array */
     protected $properties = [];
 
+    /** @var array */
+    protected $constants = [];
+
     /**
      * ClassChapter constructor.
      * @param string $class
@@ -35,11 +38,14 @@ class ClassMd implements \ArrayAccess {
         $this->class = $class;
         $this->reflexion = new \ReflectionClass( $class);
         $this->computeType();
+
+        /// Properties
         $properties = $this->reflexion->getProperties();
         foreach ($properties as $property){
             $this->properties[] = $property->getName();
         }
 
+        /// Methods
         $methods = $this->reflexion->getMethods();
         foreach ( $methods as $method){
 
@@ -57,6 +63,14 @@ class ClassMd implements \ArrayAccess {
             }
 
             $this->publicMethods[] = $methodMd;
+        }
+
+        /// Constants
+        foreach ( $this->reflexion->getConstants() as $constantName => $constantValue){
+            $this->constants[] = [
+                'name'  => $constantName,
+                'value' => $constantValue,
+            ];
         }
     }
 

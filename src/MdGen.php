@@ -8,16 +8,19 @@ use alphayax\mdGen\models\ClassMd;
  */
 class MdGen {
 
-    /** @var string */
+    /// Default values
+    const DEFAULT_SRC_DIRECTORY = '';
+
+    /** @var string Source directory. PHP Files will be scanned in this folder */
     protected $srcDirectory = '';
 
-    /** @var string[] */
+    /** @var string[] List of all founded PHP Classes, Interfaces and Traits */
     protected $loadedClasses;
 
-    /** @var models\ClassMd[] */
+    /** @var models\ClassMd[] Filtered list of PHP Classes, Interfaces and Traits */
     protected $chapters = [];
 
-    /** @var models\NamespaceMd */
+    /** @var models\NamespaceMd Root Namespace */
     protected $rootPage;
 
 
@@ -26,7 +29,7 @@ class MdGen {
      * @param $srcDirectory
      * @param $rootNamespace
      */
-    public function __construct( $srcDirectory, $rootNamespace){
+    public function __construct( $srcDirectory = self::DEFAULT_SRC_DIRECTORY, $rootNamespace){
         $this->rootNamespace = $rootNamespace;
         $this->srcDirectory  = $srcDirectory;
         $this->loadClasses();
@@ -41,6 +44,7 @@ class MdGen {
             throw new \Exception( 'Source directory not found : '. $this->srcDirectory);
         }
 
+        /// Recursively scan PHP Files
         $objects = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator( $this->srcDirectory), \RecursiveIteratorIterator::SELF_FIRST);
         $Regex = new \RegexIterator( $objects, '/^.+\.php$/i', \RecursiveRegexIterator::GET_MATCH);
         foreach( $Regex as $name => $object){
@@ -49,6 +53,7 @@ class MdGen {
             }
         }
 
+        /// Extract data from loaded classes
         $classes    = get_declared_classes();
         $traits     = get_declared_traits();
         $interfaces = get_declared_interfaces();

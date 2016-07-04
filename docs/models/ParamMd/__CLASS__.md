@@ -8,6 +8,10 @@ Full name : `alphayax\mdGen\models\ParamMd`
 - `description`
 - `variableName`
 
+## Constants
+
+> No constants
+
 ## Methods summary
 
 | Method | Description |

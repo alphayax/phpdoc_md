@@ -29,6 +29,7 @@
             throw new \Exception( 'Source directory not found : '. $this->srcDirectory);
         }
 
+        /// Recursively scan PHP Files
         $objects = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator( $this->srcDirectory), \RecursiveIteratorIterator::SELF_FIRST);
         $Regex = new \RegexIterator( $objects, '/^.+\.php$/i', \RecursiveRegexIterator::GET_MATCH);
         foreach( $Regex as $name => $object){
@@ -37,6 +38,7 @@
             }
         }
 
+        /// Extract data from loaded classes
         $classes    = get_declared_classes();
         $traits     = get_declared_traits();
         $interfaces = get_declared_interfaces();

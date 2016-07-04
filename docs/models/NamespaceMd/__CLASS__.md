@@ -11,6 +11,10 @@ Full name : `alphayax\mdGen\models\NamespaceMd`
 - `page_rd`
 - `pageName`
 
+## Constants
+
+> No constants
+
 ## Methods summary
 
 | Method | Description |

@@ -9,6 +9,10 @@ Full name : `alphayax\mdGen\MdGen`
 - `chapters`
 - `rootPage`
 
+## Constants
+
+- `DEFAULT_SRC_DIRECTORY = ''`
+
 ## Methods summary
 
 | Method | Description |

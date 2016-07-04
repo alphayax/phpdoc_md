@@ -27,7 +27,7 @@
 #### Implementation
 
 ```php
-    public function __construct( $srcDirectory, $rootNamespace){
+    public function __construct( $srcDirectory = self::DEFAULT_SRC_DIRECTORY, $rootNamespace){
         $this->rootNamespace = $rootNamespace;
         $this->srcDirectory  = $srcDirectory;
         $this->loadClasses();

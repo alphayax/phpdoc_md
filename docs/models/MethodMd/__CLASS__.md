@@ -11,11 +11,16 @@ Full name : `alphayax\mdGen\models\MethodMd`
 - `return`
 - `impl`
 
+## Constants
+
+> No constants
+
 ## Methods summary
 
 | Method | Description |
 |---|---|
 | [`__construct`](__construct.md) | MethodMd constructor. |
+| [`extractImplementation`](extractImplementation.md) |  |
 | [`hasParams`](hasParams.md) |  |
 | [`getParams`](getParams.md) |  |
 | [`getModifiers`](getModifiers.md) |  |

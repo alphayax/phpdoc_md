@@ -36,21 +36,7 @@
             $this->name = $this->reflexion->getName();
             $docBlock = $this->reflexion->getDocblock();
 
-            /// Implementation
-            $this->impl = '';
-            $f = fopen( $this->reflexion->getFileName(), 'r');
-            $lineNo = 0;
-            while ($line = fgets($f)) {
-                $lineNo++;
-                if ($lineNo >= $this->reflexion->getStartLine()) {
-                    $this->impl .= $line;
-                }
-                if ($lineNo == $this->reflexion->getEndLine()) {
-                    break;
-                }
-            }
-            fclose($f);
-
+            $this->extractImplementation();
 
             /// Desc
             $shortDesc = str_replace(PHP_EOL, ' ', $docBlock->getShortDescription());
@@ -68,10 +54,8 @@
             if( $return){
                 $this->return = $return->getType() . ' ' . $return->getDescription();
             }
-
-
-
-        } catch (\Exception $e) {
+        }
+        catch( \Exception $e) {
             // Unable to parse PHPDoc Block... Skip it :(
         }
     }

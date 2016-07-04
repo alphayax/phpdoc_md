@@ -7,6 +7,18 @@ Full name : `{{ class }}`
 {{# properties}}
 - `{{.}}`
 {{/ properties}}
+{{^ properties}}
+> No properties
+{{/ properties}}
+
+## Constants
+
+{{# constants}}
+- `{{name}} = '{{{value}}}'`
+{{/ constants}}
+{{^ constants}}
+> No constants
+{{/ constants}}
 
 ## Methods summary
 
