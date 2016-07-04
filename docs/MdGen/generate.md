@@ -1,11 +1,11 @@
-**Namespace**  : alphayax\mdGen  - **Class** : MdGen
+**Namespace**  : [alphayax\mdGen](../__NAMESPACE__.md) -
+**Class** : [MdGen](__CLASS__.md)
 
 ## `MdGen::generate`
 
 #### Description
 
 > Generate markdown files
-
 
 #### Signature
 

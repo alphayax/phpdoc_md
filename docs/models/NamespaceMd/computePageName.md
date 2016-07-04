@@ -1,11 +1,11 @@
-**Namespace**  : alphayax\mdGen\models  - **Class** : NamespaceMd
+**Namespace**  : [alphayax\mdGen\models](../__NAMESPACE__.md) -
+**Class** : [NamespaceMd](__CLASS__.md)
 
 ## `NamespaceMd::computePageName`
 
 #### Description
 
 > Compute the page name (according to the page namespace)
-
 
 #### Signature
 

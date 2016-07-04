@@ -1,11 +1,11 @@
-**Namespace**  : alphayax\mdGen\models  - **Class** : ClassMd
+**Namespace**  : [alphayax\mdGen\models](../__NAMESPACE__.md) -
+**Class** : [ClassMd](__CLASS__.md)
 
 ## `ClassMd::offsetSet`
 
 #### Description
 
 > Offset to set
-
 
 #### Signature
 

@@ -1,11 +1,11 @@
-**Namespace**  : alphayax\mdGen\models  - **Class** : MethodMd
+**Namespace**  : [alphayax\mdGen\models](../__NAMESPACE__.md) -
+**Class** : [MethodMd](__CLASS__.md)
 
 ## `MethodMd::offsetUnset`
 
 #### Description
 
 > Offset to unset
-
 
 #### Signature
 

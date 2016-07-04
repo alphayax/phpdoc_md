@@ -1,11 +1,11 @@
-**Namespace**  : alphayax\mdGen\utils  - **Class** : arrayAccessProperties
+**Namespace**  : [alphayax\mdGen\utils](../__NAMESPACE__.md) -
+**Class** : [arrayAccessProperties](__CLASS__.md)
 
 ## `arrayAccessProperties::offsetExists`
 
 #### Description
 
 > Whether a offset exists
-
 
 #### Signature
 

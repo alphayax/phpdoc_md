@@ -1,11 +1,11 @@
-**Namespace**  : alphayax\mdGen\models  - **Class** : MethodMd
+**Namespace**  : [alphayax\mdGen\models](../__NAMESPACE__.md) -
+**Class** : [MethodMd](__CLASS__.md)
 
 ## `MethodMd::offsetGet`
 
 #### Description
 
 > Offset to retrieve
-
 
 #### Signature
 

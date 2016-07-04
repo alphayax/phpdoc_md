@@ -1,11 +1,11 @@
-**Namespace**  : alphayax\mdGen\models  - **Class** : ParamMd
+**Namespace**  : [alphayax\mdGen\models](../__NAMESPACE__.md) -
+**Class** : [ParamMd](__CLASS__.md)
 
 ## `ParamMd::offsetUnset`
 
 #### Description
 
 > Offset to unset
-
 
 #### Signature
 

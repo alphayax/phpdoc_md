@@ -1,11 +1,11 @@
-**Namespace**  : alphayax\mdGen\models  - **Class** : ClassMd
+**Namespace**  : [alphayax\mdGen\models](../__NAMESPACE__.md) -
+**Class** : [ClassMd](__CLASS__.md)
 
 ## `ClassMd::getNextComponent`
 
 #### Description
 
 > Get the next namespace component (according the NS given)
-
 
 #### Signature
 

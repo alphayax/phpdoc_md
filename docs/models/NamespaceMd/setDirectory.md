@@ -1,11 +1,11 @@
-**Namespace**  : alphayax\mdGen\models  - **Class** : NamespaceMd
+**Namespace**  : [alphayax\mdGen\models](../__NAMESPACE__.md) -
+**Class** : [NamespaceMd](__CLASS__.md)
 
 ## `NamespaceMd::setDirectory`
 
 #### Description
 
 > Define the current page directory
-
 
 #### Signature
 
