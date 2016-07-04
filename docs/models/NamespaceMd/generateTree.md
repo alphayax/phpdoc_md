@@ -42,11 +42,10 @@
 
         /// Chapters
         if( ! empty( $this->classMds)){
-            foreach($this->classMds as $chapter){
-                $chapterName   = $chapter->getReflexion()->getShortName();
-                $chapterFile   = $relativePath . $this->getPageBfe();
-                $chapterAnchor = $chapterFile .'#'. $chapter->getReflexion()->getShortName();
-                $generatedMd  .= "$pad- [$chapterName]($chapterAnchor)" . PHP_EOL;
+            foreach($this->classMds as $classMd){
+                $className   = $classMd->getReflexion()->getShortName();
+                $classFile   = $relativePath . $className . DIRECTORY_SEPARATOR . '__CLASS__.md';
+                $generatedMd  .= "$pad- [$className]($classFile)" . PHP_EOL;
             }
         }
 

@@ -1,25 +1,8 @@
 
-# {{ pageName }}
+# Namespace {{ pageName }}
 
-**Namespace**  : {{ namespace }}
+**Full name**  : `{{ namespace }}`
 
 # Overview
 
 {{ generateTree }}
----
-
-{{# classMds }}
-<a name="{{getReflexion.getShortName}}"></a>
-## {{getReflexion.getShortName}}
-
-**{{type}}**  : {{getReflexion.getName}}
-
-### Public methods
-
-| Method | Description |
-|---|---|
-{{# publicMethods }}
-| `{{name}}` | {{description}} |
-{{/ publicMethods }}
-
-{{/ classMds }}
