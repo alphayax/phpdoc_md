@@ -1,0 +1,29 @@
+# **{{ type }}** {{ reflexion.getShortName }}
+
+Full name : `{{ class }}`
+
+## Properties
+
+{{# properties}}
+- `{{.}}`
+{{/ properties}}
+{{^ properties}}
+> No properties
+{{/ properties}}
+
+## Constants
+
+{{# constants}}
+- `{{name}} = '{{{value}}}'`
+{{/ constants}}
+{{^ constants}}
+> No constants
+{{/ constants}}
+
+## Methods summary
+
+| Method | Description |
+|---|---|
+{{# methods }}
+| [`{{name}}`]({{name}}.md) | {{description}} |
+{{/ methods }}

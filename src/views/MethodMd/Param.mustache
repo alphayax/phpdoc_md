@@ -1,0 +1,12 @@
+#### Parameters
+
+{{# hasParams}}
+| Name | Type | Description |
+|---|---|---|
+{{# params }}
+| `{{variableName}}` | {{type}} | {{description}} |
+{{/ params }}
+{{/ hasParams }}
+{{^ hasParams }}
+> No parameters
+{{/ hasParams }}

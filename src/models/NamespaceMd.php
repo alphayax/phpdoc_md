@@ -73,7 +73,7 @@ class NamespaceMd implements \ArrayAccess {
     public function generateTree( $pad = '', $relativePath = '') {
         $generatedMd = '';
 
-        /// SubPages
+        /// SubNamespaces
         if( ! empty( $this->subPages)){
             foreach( $this->subPages as $subPageName => $subPage){
                 $subPageFile  = './' . $relativePath . $subPageName . DIRECTORY_SEPARATOR . $subPage->getPageBfe();
@@ -82,13 +82,12 @@ class NamespaceMd implements \ArrayAccess {
             }
         }
 
-        /// Chapters
+        /// Classes
         if( ! empty( $this->classMds)){
-            foreach($this->classMds as $chapter){
-                $chapterName   = $chapter->getReflexion()->getShortName();
-                $chapterFile   = $relativePath . $this->getPageBfe();
-                $chapterAnchor = $chapterFile .'#'. $chapter->getReflexion()->getShortName();
-                $generatedMd  .= "$pad- [$chapterName]($chapterAnchor)" . PHP_EOL;
+            foreach($this->classMds as $classMd){
+                $className   = $classMd->getReflexion()->getShortName();
+                $classFile   = $relativePath . $className . DIRECTORY_SEPARATOR . '__CLASS__.md';
+                $generatedMd  .= "$pad- [$className]($classFile)" . PHP_EOL;
             }
         }
 
@@ -103,15 +102,26 @@ class NamespaceMd implements \ArrayAccess {
         $m = new \Mustache_Engine([
             'loader' => new \Mustache_Loader_FilesystemLoader( __DIR__.'/../views')
         ]);
-        $template = $m->loadTemplate('Page');
+        $template = $m->loadTemplate('Namespace');
 
         $generatedMd = $template->render( $this);
-
-        $this->writeSubPages();
 
         /// Write page
         @mkdir( $this->page_rd, 0777, true);
         file_put_contents( $this->page_rd . DIRECTORY_SEPARATOR . $this->page_bfe, $generatedMd);
+
+
+        $this->writeMdClasses();
+        $this->writeSubPages();
+    }
+
+    /**
+     *
+     */
+    protected function writeMdClasses() {
+        foreach( $this->classMds as $classMd){
+            $classMd->write( $this->page_rd);
+        }
     }
 
     /**
@@ -135,7 +145,7 @@ class NamespaceMd implements \ArrayAccess {
 
     /**
      * Return the page basename file with extension
-     * @return string
+     * @return string The page base name
      */
     public function getPageBfe() {
         return $this->page_bfe;
