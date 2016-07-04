@@ -106,10 +106,27 @@ class ClassMd implements \ArrayAccess {
         return $this->reflexion;
     }
 
-    /**
-     * Return the real kind of class (Trait, Interface, Class)
-     */
-    public function getType(){
+    public function write( $path) {
 
+        $m = new \Mustache_Engine([
+            'loader'          => new \Mustache_Loader_FilesystemLoader( __DIR__.'/../views'),
+            'partials_loader' => new \Mustache_Loader_FilesystemLoader( __DIR__. '/../views/MethodMd'),
+
+        ]);
+
+        $generatedMd = $m->loadTemplate('Class')->render( $this);
+        $page_rd = $path . DIRECTORY_SEPARATOR . $this->getReflexion()->getShortName();
+
+        /// Write page
+        @mkdir( $page_rd, 0777, true);
+        file_put_contents( $page_rd . DIRECTORY_SEPARATOR . '__CLASS__.md', $generatedMd);
+
+        $this->writeMethods( $page_rd);
+    }
+
+    private function writeMethods( $path) {
+        foreach( $this->methods as $method){
+            $method->write( $path);
+        }
     }
 }

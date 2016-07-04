@@ -120,15 +120,8 @@ class NamespaceMd implements \ArrayAccess {
      *
      */
     protected function writeMdClasses() {
-
-        $m = new \Mustache_Engine([
-            'loader'          => new \Mustache_Loader_FilesystemLoader( __DIR__.'/../views'),
-            'partials_loader' => new \Mustache_Loader_FilesystemLoader(__DIR__ . '/../views/MethodMd'),
-
-        ]);
         foreach( $this->classMds as $classMd){
-            $generatedMd = $m->loadTemplate('Class')->render( $classMd);
-            file_put_contents( $this->page_rd . DIRECTORY_SEPARATOR . $classMd->getReflexion()->getShortName() . '.md', $generatedMd);
+            $classMd->write( $this->page_rd);
         }
     }
 

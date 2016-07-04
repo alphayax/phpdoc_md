@@ -43,7 +43,7 @@
 | `getNextComponent` | Get the next namespace component (according the NS given) |
 | `getNamespace` | Get the namespace of the current reflected class |
 | `getReflexion` | Get the reflected class |
-| `getType` | Return the real kind of class (Trait, Interface, Class) |
+| `write` |  |
 | `offsetExists` | Whether a offset exists |
 | `offsetGet` | Offset to retrieve |
 | `offsetSet` | Offset to set |
@@ -61,6 +61,7 @@
 | `hasParams` |  |
 | `getParams` |  |
 | `getModifiers` |  |
+| `write` |  |
 | `offsetExists` | Whether a offset exists |
 | `offsetGet` | Offset to retrieve |
 | `offsetSet` | Offset to set |

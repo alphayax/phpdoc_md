@@ -24,12 +24,14 @@ class MethodMd implements \ArrayAccess {
     /** @var mixed Method Return */
     protected $return;
 
+    protected $impl;
+
     /**
      * MethodMd constructor.
      * @param $className
      * @param $methodName
      */
-    public function __construct($className, $methodName) {
+    public function __construct( $className, $methodName) {
 
         try {
 
@@ -37,6 +39,22 @@ class MethodMd implements \ArrayAccess {
 
             $this->name = $this->reflexion->getName();
             $docBlock = $this->reflexion->getDocblock();
+
+            /// Implementation
+            $this->impl = '';
+            $f = fopen( $this->reflexion->getFileName(), 'r');
+            $lineNo = 0;
+            while ($line = fgets($f)) {
+                $lineNo++;
+                if ($lineNo >= $this->reflexion->getStartLine()) {
+                    $this->impl .= $line;
+                }
+                if ($lineNo == $this->reflexion->getEndLine()) {
+                    break;
+                }
+            }
+            fclose($f);
+
 
             /// Desc
             $shortDesc = str_replace(PHP_EOL, ' ', $docBlock->getShortDescription());
@@ -92,6 +110,20 @@ class MethodMd implements \ArrayAccess {
             ($this->reflexion->isPrivate()   ? ' private'    : '').
             ($this->reflexion->isStatic()    ? ' static'     : '');
 
+    }
+
+    /**
+     * @param $path
+     */
+    public function write( $path) {
+        $m = new \Mustache_Engine([
+            'loader'          => new \Mustache_Loader_FilesystemLoader( __DIR__.'/../views'),
+            'partials_loader' => new \Mustache_Loader_FilesystemLoader(__DIR__ . '/../views/MethodMd'),
+
+        ]);
+
+        $generatedMd = $m->loadTemplate('Method')->render( $this);
+        file_put_contents( $path . DIRECTORY_SEPARATOR . $this->name . '.md', $generatedMd);
     }
 
 }
