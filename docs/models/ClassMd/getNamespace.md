@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : ClassMd
 
-# getNamespace
+## `ClassMd::getNamespace`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : ClassMd
-
+#### Description
 
 > Get the namespace of the current reflected class
 

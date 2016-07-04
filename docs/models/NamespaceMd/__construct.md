@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : NamespaceMd
 
-# __construct
+## `NamespaceMd::__construct`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : NamespaceMd
-
+#### Description
 
 > Page constructor
 

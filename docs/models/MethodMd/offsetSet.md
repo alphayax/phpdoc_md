@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : MethodMd
 
-# offsetSet
+## `MethodMd::offsetSet`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : MethodMd
-
+#### Description
 
 > Offset to set
 

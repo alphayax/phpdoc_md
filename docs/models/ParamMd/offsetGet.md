@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : ParamMd
 
-# offsetGet
+## `ParamMd::offsetGet`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : ParamMd
-
+#### Description
 
 > Offset to retrieve
 

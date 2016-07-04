@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen  - **Class** : MdGen
 
-# loadClasses
+## `MdGen::loadClasses`
 
-**Namespace**  : alphayax\mdGen
-
-**Class** : MdGen
-
+#### Description
 
 > Load class in the source directory
 

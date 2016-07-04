@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\utils  - **Class** : arrayAccessProperties
 
-# offsetGet
+## `arrayAccessProperties::offsetGet`
 
-**Namespace**  : alphayax\mdGen\utils
-
-**Class** : arrayAccessProperties
-
+#### Description
 
 > Offset to retrieve
 

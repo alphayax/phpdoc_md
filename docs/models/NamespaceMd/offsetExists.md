@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : NamespaceMd
 
-# offsetExists
+## `NamespaceMd::offsetExists`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : NamespaceMd
-
+#### Description
 
 > Whether a offset exists
 

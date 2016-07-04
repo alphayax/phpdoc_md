@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen  - **Class** : MdGen
 
-# generateClassMdFromLoadedClasses
+## `MdGen::generateClassMdFromLoadedClasses`
 
-**Namespace**  : alphayax\mdGen
-
-**Class** : MdGen
-
+#### Description
 
 > Create a chapter form loaded classes
 

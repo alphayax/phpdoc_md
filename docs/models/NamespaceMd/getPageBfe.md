@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : NamespaceMd
 
-# getPageBfe
+## `NamespaceMd::getPageBfe`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : NamespaceMd
-
+#### Description
 
 > Return the page basename file with extension
 

@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : NamespaceMd
 
-# offsetUnset
+## `NamespaceMd::offsetUnset`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : NamespaceMd
-
+#### Description
 
 > Offset to unset
 

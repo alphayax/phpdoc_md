@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : ClassMd
 
-# write
+## `ClassMd::write`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : ClassMd
-
+#### Description
 
 > 
 

@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : ParamMd
 
-# __construct
+## `ParamMd::__construct`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : ParamMd
-
+#### Description
 
 > ParamMd constructor.
 

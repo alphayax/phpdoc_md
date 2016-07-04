@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : ClassMd
 
-# computeType
+## `ClassMd::computeType`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : ClassMd
-
+#### Description
 
 > Determine the type of class
 

@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : ClassMd
 
-# getReflexion
+## `ClassMd::getReflexion`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : ClassMd
-
+#### Description
 
 > Get the reflected class
 

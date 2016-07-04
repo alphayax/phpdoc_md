@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen  - **Class** : MdGen
 
-# __construct
+## `MdGen::__construct`
 
-**Namespace**  : alphayax\mdGen
-
-**Class** : MdGen
-
+#### Description
 
 > MdGen constructor.
 

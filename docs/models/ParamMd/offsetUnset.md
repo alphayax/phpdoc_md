@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : ParamMd
 
-# offsetUnset
+## `ParamMd::offsetUnset`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : ParamMd
-
+#### Description
 
 > Offset to unset
 

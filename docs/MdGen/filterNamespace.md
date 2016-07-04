@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen  - **Class** : MdGen
 
-# filterNamespace
+## `MdGen::filterNamespace`
 
-**Namespace**  : alphayax\mdGen
-
-**Class** : MdGen
-
+#### Description
 
 > Filter class who are in a specific namespace
 

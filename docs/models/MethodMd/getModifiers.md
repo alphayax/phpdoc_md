@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : MethodMd
 
-# getModifiers
+## `MethodMd::getModifiers`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : MethodMd
-
+#### Description
 
 > 
 

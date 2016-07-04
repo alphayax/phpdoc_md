@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\utils  - **Class** : arrayAccessProperties
 
-# offsetExists
+## `arrayAccessProperties::offsetExists`
 
-**Namespace**  : alphayax\mdGen\utils
-
-**Class** : arrayAccessProperties
-
+#### Description
 
 > Whether a offset exists
 

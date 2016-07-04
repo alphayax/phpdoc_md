@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen  - **Class** : MdGen
 
-# generate
+## `MdGen::generate`
 
-**Namespace**  : alphayax\mdGen
-
-**Class** : MdGen
-
+#### Description
 
 > Generate markdown files
 

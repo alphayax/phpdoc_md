@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\models  - **Class** : MethodMd
 
-# hasParams
+## `MethodMd::hasParams`
 
-**Namespace**  : alphayax\mdGen\models
-
-**Class** : MethodMd
-
+#### Description
 
 > 
 

@@ -1,10 +1,8 @@
+**Namespace**  : alphayax\mdGen\utils  - **Class** : arrayAccessProperties
 
-# offsetSet
+## `arrayAccessProperties::offsetSet`
 
-**Namespace**  : alphayax\mdGen\utils
-
-**Class** : arrayAccessProperties
-
+#### Description
 
 > Offset to set
 
