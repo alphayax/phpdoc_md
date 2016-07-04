@@ -1,8 +1,9 @@
 
 # writeSubPages
 
-**Class** : NamespaceMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : NamespaceMd
 
 
 > Write sub pages of this page
@@ -21,7 +22,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     public function writeSubPages() {

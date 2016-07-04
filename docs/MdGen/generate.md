@@ -1,8 +1,9 @@
 
 # generate
 
-**Class** : MdGen
 **Namespace**  : alphayax\mdGen
+
+**Class** : MdGen
 
 
 > Generate markdown files
@@ -23,7 +24,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     public function generate( $directory = '.'){

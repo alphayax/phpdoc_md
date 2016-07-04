@@ -1,8 +1,9 @@
 
 # __construct
 
-**Class** : NamespaceMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : NamespaceMd
 
 
 > Page constructor
@@ -24,7 +25,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     public function __construct( $pageNamespace, array $chapters) {

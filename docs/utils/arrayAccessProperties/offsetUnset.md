@@ -1,8 +1,9 @@
 
 # offsetUnset
 
-**Class** : arrayAccessProperties
 **Namespace**  : alphayax\mdGen\utils
+
+**Class** : arrayAccessProperties
 
 
 > Offset to unset
@@ -24,7 +25,7 @@
 
     void 
 
-## Implementation
+#### Implementation
 
 ```php
     public function offsetUnset($offset) {

@@ -1,8 +1,9 @@
 
 # getModifiers
 
-**Class** : MethodMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : MethodMd
 
 
 > 
@@ -22,7 +23,7 @@
 
     string 
 
-## Implementation
+#### Implementation
 
 ```php
     public function getModifiers() {

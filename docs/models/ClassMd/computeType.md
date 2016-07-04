@@ -1,8 +1,9 @@
 
 # computeType
 
-**Class** : ClassMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : ClassMd
 
 
 > Determine the type of class
@@ -21,7 +22,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     protected function computeType(){

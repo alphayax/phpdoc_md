@@ -1,8 +1,9 @@
 
 # getReflexion
 
-**Class** : ClassMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : ClassMd
 
 
 > Get the reflected class
@@ -22,7 +23,7 @@
 
     \ReflectionClass 
 
-## Implementation
+#### Implementation
 
 ```php
     public function getReflexion(){

@@ -1,8 +1,9 @@
 
 # setDirectory
 
-**Class** : NamespaceMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : NamespaceMd
 
 
 > Define the current page directory
@@ -23,7 +24,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     public function setDirectory( $string) {

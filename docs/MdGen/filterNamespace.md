@@ -1,8 +1,9 @@
 
 # filterNamespace
 
-**Class** : MdGen
 **Namespace**  : alphayax\mdGen
+
+**Class** : MdGen
 
 
 > Filter class who are in a specific namespace
@@ -23,7 +24,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     public function filterNamespace( $namespaceName) {

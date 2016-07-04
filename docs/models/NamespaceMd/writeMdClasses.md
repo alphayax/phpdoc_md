@@ -1,8 +1,9 @@
 
 # writeMdClasses
 
-**Class** : NamespaceMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : NamespaceMd
 
 
 > 
@@ -21,7 +22,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     protected function writeMdClasses() {

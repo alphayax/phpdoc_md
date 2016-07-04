@@ -1,8 +1,9 @@
 
 # __construct
 
-**Class** : MethodMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : MethodMd
 
 
 > MethodMd constructor.
@@ -24,7 +25,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     public function __construct( $className, $methodName) {

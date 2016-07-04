@@ -1,8 +1,9 @@
 
 # filterSubClasses
 
-**Class** : MdGen
 **Namespace**  : alphayax\mdGen
+
+**Class** : MdGen
 
 
 > Filter class who are sub-classes of a specific class
@@ -23,7 +24,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     public function filterSubClasses( $className) {

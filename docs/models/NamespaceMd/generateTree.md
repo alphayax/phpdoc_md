@@ -1,8 +1,9 @@
 
 # generateTree
 
-**Class** : NamespaceMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : NamespaceMd
 
 
 > Generate overview markdown tree
@@ -25,7 +26,7 @@
 
     string 
 
-## Implementation
+#### Implementation
 
 ```php
     public function generateTree( $pad = '', $relativePath = '') {

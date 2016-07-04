@@ -1,8 +1,9 @@
 
 # getNextComponent
 
-**Class** : ClassMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : ClassMd
 
 
 > Get the next namespace component (according the NS given)
@@ -24,7 +25,7 @@
 
     string 
 
-## Implementation
+#### Implementation
 
 ```php
     public function getNextComponent( $namespace) {

@@ -1,8 +1,9 @@
 
 # offsetGet
 
-**Class** : ClassMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : ClassMd
 
 
 > Offset to retrieve
@@ -24,7 +25,7 @@
 
     mixed Can return all value types.
 
-## Implementation
+#### Implementation
 
 ```php
     public function offsetGet( $offset) {

@@ -1,8 +1,9 @@
 
 # {{ name }}
 
-**Class** : {{ reflexion.getDeclaringClass.getShortName }}
 **Namespace**  : {{ reflexion.getDeclaringClass.getNamespaceName }}
+
+**Class** : {{ reflexion.getDeclaringClass.getShortName }}
 
 
 > {{description}}
@@ -14,8 +15,4 @@
 
 {{> Return}}
 
-## Implementation
-
-```php
-{{{ impl }}}
-```
+{{> Implementation}}

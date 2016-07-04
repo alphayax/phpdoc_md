@@ -1,8 +1,9 @@
 
 # computePageName
 
-**Class** : NamespaceMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : NamespaceMd
 
 
 > Compute the page name (according to the page namespace)
@@ -22,7 +23,7 @@
 
     string 
 
-## Implementation
+#### Implementation
 
 ```php
     protected function computePageName(){

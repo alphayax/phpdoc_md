@@ -1,8 +1,9 @@
 
 # getNamespace
 
-**Class** : ClassMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : ClassMd
 
 
 > Get the namespace of the current reflected class
@@ -21,7 +22,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     public function getNamespace() {

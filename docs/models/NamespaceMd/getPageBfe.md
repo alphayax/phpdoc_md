@@ -1,8 +1,9 @@
 
 # getPageBfe
 
-**Class** : NamespaceMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : NamespaceMd
 
 
 > Return the page basename file with extension
@@ -22,7 +23,7 @@
 
     string The page base name
 
-## Implementation
+#### Implementation
 
 ```php
     public function getPageBfe() {

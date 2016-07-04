@@ -1,8 +1,9 @@
 
 # write
 
-**Class** : NamespaceMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : NamespaceMd
 
 
 > Write markdown file
@@ -21,7 +22,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     public function write(){

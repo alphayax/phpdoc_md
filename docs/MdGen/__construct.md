@@ -1,8 +1,9 @@
 
 # __construct
 
-**Class** : MdGen
 **Namespace**  : alphayax\mdGen
+
+**Class** : MdGen
 
 
 > MdGen constructor.
@@ -24,7 +25,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     public function __construct( $srcDirectory, $rootNamespace){

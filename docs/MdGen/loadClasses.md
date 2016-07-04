@@ -1,8 +1,9 @@
 
 # loadClasses
 
-**Class** : MdGen
 **Namespace**  : alphayax\mdGen
+
+**Class** : MdGen
 
 
 > Load class in the source directory
@@ -21,7 +22,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     protected function loadClasses(){

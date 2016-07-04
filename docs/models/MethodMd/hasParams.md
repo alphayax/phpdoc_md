@@ -1,8 +1,9 @@
 
 # hasParams
 
-**Class** : MethodMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : MethodMd
 
 
 > 
@@ -22,7 +23,7 @@
 
     bool 
 
-## Implementation
+#### Implementation
 
 ```php
     public function hasParams() {

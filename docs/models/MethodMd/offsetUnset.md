@@ -1,8 +1,9 @@
 
 # offsetUnset
 
-**Class** : MethodMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : MethodMd
 
 
 > Offset to unset
@@ -24,7 +25,7 @@
 
     void 
 
-## Implementation
+#### Implementation
 
 ```php
     public function offsetUnset($offset) {

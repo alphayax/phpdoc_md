@@ -1,8 +1,9 @@
 
 # offsetSet
 
-**Class** : ClassMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : ClassMd
 
 
 > Offset to set
@@ -25,7 +26,7 @@
 
     void 
 
-## Implementation
+#### Implementation
 
 ```php
     public function offsetSet( $offset, $value) {

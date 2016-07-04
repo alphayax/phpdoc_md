@@ -1,8 +1,9 @@
 
 # offsetExists
 
-**Class** : ClassMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : ClassMd
 
 
 > Whether a offset exists
@@ -24,7 +25,7 @@
 
     boolean true on success or false on failure.
 
-## Implementation
+#### Implementation
 
 ```php
     public function offsetExists($offset) {

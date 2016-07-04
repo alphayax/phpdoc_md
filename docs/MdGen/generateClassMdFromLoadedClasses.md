@@ -1,8 +1,9 @@
 
 # generateClassMdFromLoadedClasses
 
-**Class** : MdGen
 **Namespace**  : alphayax\mdGen
+
+**Class** : MdGen
 
 
 > Create a chapter form loaded classes
@@ -22,7 +23,7 @@
 
     ClassMd[] 
 
-## Implementation
+#### Implementation
 
 ```php
     protected function generateClassMdFromLoadedClasses(){

@@ -1,8 +1,9 @@
 
 # offsetSet
 
-**Class** : arrayAccessProperties
 **Namespace**  : alphayax\mdGen\utils
+
+**Class** : arrayAccessProperties
 
 
 > Offset to set
@@ -25,7 +26,7 @@
 
     void 
 
-## Implementation
+#### Implementation
 
 ```php
     public function offsetSet( $offset, $value) {

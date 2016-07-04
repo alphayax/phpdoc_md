@@ -1,8 +1,9 @@
 
 # offsetGet
 
-**Class** : arrayAccessProperties
 **Namespace**  : alphayax\mdGen\utils
+
+**Class** : arrayAccessProperties
 
 
 > Offset to retrieve
@@ -24,7 +25,7 @@
 
     mixed Can return all value types.
 
-## Implementation
+#### Implementation
 
 ```php
     public function offsetGet( $offset) {

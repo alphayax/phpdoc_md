@@ -1,8 +1,9 @@
 
 # __construct
 
-**Class** : ClassMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : ClassMd
 
 
 > ClassChapter constructor.
@@ -23,7 +24,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     public function __construct( $class){

@@ -1,8 +1,9 @@
 
 # write
 
-**Class** : MethodMd
 **Namespace**  : alphayax\mdGen\models
+
+**Class** : MethodMd
 
 
 > 
@@ -23,7 +24,7 @@
 #### Return
 
 
-## Implementation
+#### Implementation
 
 ```php
     public function write( $path) {
