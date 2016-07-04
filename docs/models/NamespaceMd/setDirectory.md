@@ -10,14 +10,14 @@
 #### Signature
 
 ```php
- public function setDirectory();
+ public function setDirectory($string);
 ```
 
 #### Parameters
 
 | Name | Type | Description |
 |---|---|---|
-| `` | $string |  |
+| `$string` | unknown |  |
 
 #### Return
 

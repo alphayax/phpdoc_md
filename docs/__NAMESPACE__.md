@@ -1,4 +1,3 @@
-
 # Namespace mdGen
 
 **Full name**  : `alphayax\mdGen`

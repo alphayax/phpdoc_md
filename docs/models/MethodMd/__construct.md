@@ -10,15 +10,15 @@
 #### Signature
 
 ```php
- public function __construct(, );
+ public function __construct($className, $methodName);
 ```
 
 #### Parameters
 
 | Name | Type | Description |
 |---|---|---|
-| `` | $className |  |
-| `` | $methodName |  |
+| `$className` | unknown |  |
+| `$methodName` | unknown |  |
 
 #### Return
 

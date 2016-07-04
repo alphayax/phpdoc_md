@@ -29,6 +29,11 @@
         $this->type         = $param->getType();
         $this->description  = $param->getDescription();
         $this->variableName = $param->getVariableName();
+
+        if( empty( $this->variableName) && 0 === strpos( $this->type, '$')){
+            $this->variableName = $this->type;
+            $this->type         = 'unknown';
+        }
     }
 
 ```

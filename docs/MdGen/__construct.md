@@ -10,15 +10,15 @@
 #### Signature
 
 ```php
- public function __construct(, );
+ public function __construct($srcDirectory, $rootNamespace);
 ```
 
 #### Parameters
 
 | Name | Type | Description |
 |---|---|---|
-| `` | $srcDirectory |  |
-| `` | $rootNamespace |  |
+| `$srcDirectory` | unknown |  |
+| `$rootNamespace` | unknown |  |
 
 #### Return
 

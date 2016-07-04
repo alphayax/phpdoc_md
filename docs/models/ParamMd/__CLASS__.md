@@ -1,4 +1,3 @@
-
 # **Class** ParamMd
 
 Full name : `alphayax\mdGen\models\ParamMd`
@@ -13,8 +12,8 @@ Full name : `alphayax\mdGen\models\ParamMd`
 
 | Method | Description |
 |---|---|
-| [__construct](__construct.md) | ParamMd constructor. |
-| [offsetExists](offsetExists.md) | Whether a offset exists |
-| [offsetGet](offsetGet.md) | Offset to retrieve |
-| [offsetSet](offsetSet.md) | Offset to set |
-| [offsetUnset](offsetUnset.md) | Offset to unset |
+| [`__construct`](__construct.md) | ParamMd constructor. |
+| [`offsetExists`](offsetExists.md) | Whether a offset exists |
+| [`offsetGet`](offsetGet.md) | Offset to retrieve |
+| [`offsetSet`](offsetSet.md) | Offset to set |
+| [`offsetUnset`](offsetUnset.md) | Offset to unset |

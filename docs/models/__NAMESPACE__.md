@@ -1,4 +1,3 @@
-
 # Namespace models
 
 **Full name**  : `alphayax\mdGen\models`

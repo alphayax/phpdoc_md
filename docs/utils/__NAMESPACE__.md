@@ -1,4 +1,3 @@
-
 # Namespace utils
 
 **Full name**  : `alphayax\mdGen\utils`

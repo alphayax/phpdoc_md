@@ -10,14 +10,14 @@
 #### Signature
 
 ```php
- public function write();
+ public function write($path);
 ```
 
 #### Parameters
 
 | Name | Type | Description |
 |---|---|---|
-| `` | $path |  |
+| `$path` | unknown |  |
 
 #### Return
 
